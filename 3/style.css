@@ -1,0 +1,62 @@
+body {
+  margin: 5rem;
+  font-family: helvetica, sans-serif;
+}
+
+.marketPath,
+.exact,
+.cty,
+.eby,
+.fact,
+.ifttt,
+.pg,
+.find,
+.cnet,
+.bbye,
+.cow,
+.hack,
+.idFinder {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.addOpac {
+  opacity: 1;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.removeOpac {
+  opacity: 0.1;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.static {
+  opacity: 1;
+}
+
+.idFinder {
+  text-decoration: underline;
+}
+
+div {
+  width: 90%;
+  margin: auto;
+}
+
+p {
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+}
