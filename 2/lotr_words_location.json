@@ -1,0 +1,447 @@
+[
+  {
+    "location": "Creative Exploration",
+    "character": "Linn",
+    "words": 679
+  },
+  {
+    "location": "Creative Exploration",
+    "character": "Pei Pei",
+    "words": 124
+  },
+  {
+    "location": "Creative Exploration",
+    "character": "Kyu",
+    "words": 239
+  },
+  {
+    "location": "Creative Exploration",
+    "character": "Krishna",
+    "words": 1064
+  },
+  {
+    "location": "Creative Exploration",
+    "character": "Peixin",
+    "words": 173
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Hongru",
+    "words": 258
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Linn",
+    "words": 125
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Peixin",
+    "words": 56
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Pei Pei",
+    "words": 76
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Kyu",
+    "words": 71
+  },
+  {
+    "location": "Style of Expression",
+    "character": "Hongru",
+    "words": 3
+  },
+  {
+    "location": "Style of Expression",
+    "character": "Pei Pei",
+    "words": 108
+  },
+  {
+    "location": "Style of Expression",
+    "character": "Veena",
+    "words": 45
+  },
+  {
+    "location": "Style of Expression",
+    "character": "Krishna",
+    "words": 224
+  },
+  {
+    "location": "Style of Expression",
+    "character": "Peixin",
+    "words": 116
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Linn",
+    "words": 153
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Sophie",
+    "words": 259
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Veena",
+    "words": 38
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Aaron",
+    "words": 34
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Kyu",
+    "words": 105
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Krishna",
+    "words": 276
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Hongru",
+    "words": 232
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Peixin",
+    "words": 29
+  },
+  {
+    "location": "Design for Healthcare",
+    "character": "Pei Pei",
+    "words": 27
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Aaron",
+    "words": 11
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Peixin",
+    "words": 17
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Pei Pei",
+    "words": 10
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Kyu",
+    "words": 3
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Hongru",
+    "words": 42
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Sophie",
+    "words": 76
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Krishna",
+    "words": 86
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Veena",
+    "words": 66
+  },
+  {
+    "location": "Elderly Care",
+    "character": "Linn",
+    "words": 6
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Krishna",
+    "words": 762
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Veena",
+    "words": 102
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Aaron",
+    "words": 19
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Peixin",
+    "words": 17
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Pei Pei",
+    "words": 21
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Kyu",
+    "words": 32
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Linn",
+    "words": 90
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Sophie",
+    "words": 55
+  },
+  {
+    "location": "Design in Tech",
+    "character": "Hongru",
+    "words": 98
+  },
+  {
+    "location": "Form Creation",
+    "character": "Aaron",
+    "words": 68
+  },
+  {
+    "location": "Form Creation",
+    "character": "Kyu",
+    "words": 64
+  },
+  {
+    "location": "Form Creation",
+    "character": "Peixin",
+    "words": 11
+  },
+  {
+    "location": "Form Creation",
+    "character": "Linn",
+    "words": 36
+  },
+  {
+    "location": "Form Creation",
+    "character": "Pei Pei",
+    "words": 1
+  },
+  {
+    "location": "Form Creation",
+    "character": "Hongru",
+    "words": 55
+  },
+  {
+    "location": "Form Creation",
+    "character": "Sophie",
+    "words": 176
+  },
+  {
+    "location": "Form Creation",
+    "character": "Veena",
+    "words": 165
+  },
+  {
+    "location": "Materiality",
+    "character": "Kyu",
+    "words": 89
+  },
+  {
+    "location": "Materiality",
+    "character": "Linn",
+    "words": 129
+  },
+  {
+    "location": "Materiality",
+    "character": "Pei Pei",
+    "words": 17
+  },
+  {
+    "location": "Materiality",
+    "character": "Sophie",
+    "words": 398
+  },
+  {
+    "location": "Materiality",
+    "character": "Hongru",
+    "words": 319
+  },
+  {
+    "location": "Materiality",
+    "character": "Veena",
+    "words": 60
+  },
+  {
+    "location": "Materiality",
+    "character": "Aaron",
+    "words": 52
+  },
+  {
+    "location": "Materiality",
+    "character": "Peixin",
+    "words": 20
+  },
+  {
+    "location": "Social Interactions",
+    "character": "Kyu",
+    "words": 347
+  },
+  {
+    "location": "Social Interactions",
+    "character": "Linn",
+    "words": 223
+  },
+  {
+    "location": "Animation",
+    "character": "Hongru",
+    "words": 907
+  },
+  {
+    "location": "Animation",
+    "character": "Aaron",
+    "words": 407
+  },
+  {
+    "location": "Animation",
+    "character": "Pei Pei",
+    "words": 203
+  },
+  {
+    "location": "Animation",
+    "character": "Peixin",
+    "words": 281
+  },
+  {
+    "location": "Animation",
+    "character": "Krishna",
+    "words": 671
+  },
+  {
+    "location": "Animation",
+    "character": "Veena",
+    "words": 607
+  },
+  {
+    "location": "Architecture",
+    "character": "Krishna",
+    "words": 524
+  },
+  {
+    "location": "Architecture",
+    "character": "Aaron",
+    "words": 73
+  },
+  {
+    "location": "Architecture",
+    "character": "Peixin",
+    "words": 297
+  },
+  {
+    "location": "Architecture",
+    "character": "Pei Pei",
+    "words": 276
+  },
+  {
+    "location": "Architecture",
+    "character": "Hongru",
+    "words": 108
+  },
+  {
+    "location": "Architecture",
+    "character": "Veena",
+    "words": 89
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Sophie",
+    "words": 132
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Kyu",
+    "words": 822
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Linn",
+    "words": 491
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Krishna",
+    "words": 1155
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Pei Pei",
+    "words": 386
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Hongru",
+    "words": 175
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Veena",
+    "words": 72
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Peixin",
+    "words": 97
+  },
+  {
+    "location": "Industrial Design",
+    "character": "Aaron",
+    "words": 8
+  },
+  {
+    "location": "Engineering",
+    "character": "Aaron",
+    "words": 8
+  },
+  {
+    "location": "Engineering",
+    "character": "Linn",
+    "words": 361
+  },
+  {
+    "location": "Engineering",
+    "character": "Hongru",
+    "words": 128
+  },
+  {
+    "location": "Engineering",
+    "character": "Krishna",
+    "words": 32
+  },
+  {
+    "location": "Engineering",
+    "character": "Veena",
+    "words": 21
+  },
+  {
+    "location": "Engineering",
+    "character": "Peixin",
+    "words": 3
+  },
+  {
+    "location": "Engineering",
+    "character": "Pei Pei",
+    "words": 12
+  },
+  {
+    "location": "Engineering",
+    "character": "Kyu",
+    "words": 753
+  }
+]

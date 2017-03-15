@@ -1,0 +1,37 @@
+{
+  "nodes": [
+    {"atom": "What are you making?", "size": 36},
+    {"atom": "App", "size": 12},
+    {"atom": "Wearables", "size": 8},
+    {"atom": "Physcial Objects", "size": 4},
+    {"atom": "Website", "size": 14},
+    {"atom": "Games", "size": 4},
+    {"atom": "Poster", "size": 4},
+    {"atom": "Privacy Seekers", "size": 1},
+    {"atom": "Elderly People", "size": 1},
+    {"atom": "Office Workers", "size": 1},
+    {"atom": "Urban People", "size": 1},
+    {"atom": "Nervous People", "size": 1},
+    {"atom": "Children", "size": 1},
+    {"atom": "Empty Nesters", "size": 1},
+    {"atom": "Patients", "size": 1},
+    {"atom": "Empathetic Healthcare", "size": 1}
+  ],
+  "links": [
+    {"source": 0, "target": 1,  "bond": 2},
+    {"source": 0, "target": 2,  "bond": 2},
+    {"source": 0, "target": 3,  "bond": 2},
+    {"source": 0, "target": 4,  "bond": 2},
+    {"source": 0, "target": 5,  "bond": 2},
+    {"source": 0, "target": 6,  "bond": 2},
+    {"source": 1, "target": 7,  "bond": 1},
+    {"source": 2, "target": 8,  "bond": 1},
+    {"source": 3, "target": 9,  "bond": 1},
+    {"source": 4, "target": 10,  "bond": 1},
+    {"source": 5, "target": 11,  "bond": 1},
+    {"source": 6, "target": 12,  "bond": 1},
+    {"source": 6, "target": 13,  "bond": 1},
+    {"source": 6, "target": 14,  "bond": 1},
+    {"source": 1, "target": 15,  "bond": 1}
+  ]
+}

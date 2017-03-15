@@ -1,0 +1,128 @@
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "Interaction Design",
+   "children": [
+     {"name": "Kyu",
+      "children": [
+        {"name": "#soundshade", "size": 743},
+        {"name": "#personalsoundspace", "size": 743},
+        {"name": "#socialspace", "size": 743},
+        {"name": "#noisecontrol", "size": 743},
+        {"name": "#openspacemanner", "size": 743}
+      ]
+     },
+     {"name": "Veena",
+      "children": [
+        {"name": "#procrastination", "size": 743},
+        {"name": "#productivetools", "size": 743},
+        {"name": "#practice", "size": 743},
+        {"name": "#habitchange", "size": 743},
+        {"name": "#routinestorituals", "size": 743}
+      ]
+     },
+     {"name": "Krishna",
+      "children": [
+        {"name": "#procrastination", "size": 743},
+        {"name": "#productivetools", "size": 743},
+        {"name": "#practice", "size": 743},
+        {"name": "#habitchange", "size": 743},
+        {"name": "#routinestorituals", "size": 743}
+      ]
+     },
+     {"name": "Hongru",
+      "children": [
+        {"name": "#procrastination", "size": 743},
+        {"name": "#productivetools", "size": 743},
+        {"name": "#practice", "size": 743},
+        {"name": "#habitchange", "size": 743},
+        {"name": "#routinestorituals", "size": 743}
+      ]
+     }
+   ]
+  },
+  {
+    "name": "Interaction Design",
+    "children": [
+      {"name": "Kyu",
+       "children": [
+         {"name": "#soundshade", "size": 743},
+         {"name": "#personalsoundspace", "size": 743},
+         {"name": "#socialspace", "size": 743},
+         {"name": "#noisecontrol", "size": 743},
+         {"name": "#openspacemanner", "size": 743}
+       ]
+      },
+      {"name": "Veena",
+       "children": [
+         {"name": "#procrastination", "size": 743},
+         {"name": "#productivetools", "size": 743},
+         {"name": "#practice", "size": 743},
+         {"name": "#habitchange", "size": 743},
+         {"name": "#routinestorituals", "size": 743}
+       ]
+      },
+      {"name": "Krishna",
+       "children": [
+         {"name": "#procrastination", "size": 743},
+         {"name": "#productivetools", "size": 743},
+         {"name": "#practice", "size": 743},
+         {"name": "#habitchange", "size": 743},
+         {"name": "#routinestorituals", "size": 743}
+       ]
+      },
+      {"name": "Hongru",
+       "children": [
+         {"name": "#procrastination", "size": 743},
+         {"name": "#productivetools", "size": 743},
+         {"name": "#practice", "size": 743},
+         {"name": "#habitchange", "size": 743},
+         {"name": "#routinestorituals", "size": 743}
+       ]
+      }
+    ]
+  },
+  {
+    "name": "Industrial Design",
+    "children": [
+      {"name": "Kyu",
+       "children": [
+         {"name": "#soundshade", "size": 743},
+         {"name": "#personalsoundspace", "size": 743},
+         {"name": "#socialspace", "size": 743},
+         {"name": "#noisecontrol", "size": 743},
+         {"name": "#openspacemanner", "size": 743}
+       ]
+      },
+      {"name": "Veena",
+       "children": [
+         {"name": "#procrastination", "size": 743},
+         {"name": "#productivetools", "size": 743},
+         {"name": "#practice", "size": 743},
+         {"name": "#habitchange", "size": 743},
+         {"name": "#routinestorituals", "size": 743}
+       ]
+      },
+      {"name": "Krishna",
+       "children": [
+         {"name": "#procrastination", "size": 743},
+         {"name": "#productivetools", "size": 743},
+         {"name": "#practice", "size": 743},
+         {"name": "#habitchange", "size": 743},
+         {"name": "#routinestorituals", "size": 743}
+       ]
+      },
+      {"name": "Hongru",
+       "children": [
+         {"name": "#procrastination", "size": 743},
+         {"name": "#productivetools", "size": 743},
+         {"name": "#practice", "size": 743},
+         {"name": "#habitchange", "size": 743},
+         {"name": "#routinestorituals", "size": 743}
+       ]
+      }
+    ]
+  }
+ ]
+}
