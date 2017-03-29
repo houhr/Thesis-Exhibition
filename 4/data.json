@@ -1,0 +1,14 @@
+{
+  "name": "MFA Design",
+  "children": [
+    {
+      "name": "Interaction Design", "size": 1000
+    },
+    {
+      "name": "Graphic Design", "size": 2000
+    },
+    {
+      "name": "Industrial Design", "size": 3000
+    }
+  ]
+}
