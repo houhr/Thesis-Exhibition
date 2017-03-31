@@ -5,7 +5,7 @@
 <style>
 
     body {
-        margin-bottom: 10vh;
+    margin-bottom: 10vh;
     }
 
     .title {
@@ -22,7 +22,7 @@
   
 
     .heatmap {
-            display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 65vw;
@@ -37,9 +37,9 @@
 
   .axis text {
       font-family: sans-serif;
-        font-weight: bold;
+      font-weight: bold;
       font-size: 11px;
-        fill: black;
+      fill: black;
   }
   
     .tooltip {
@@ -49,7 +49,7 @@
   height: 12px;
   padding: 8px;
   margin-top: -20px;
-  font: 10px sans-serif;
+  font: 1rem sans-serif;
   background: rgba(255, 255, 255, 0.5);
   pointer-events: none;
 }
@@ -59,13 +59,14 @@
     }
 
     .category {
-                    display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50vw;
-              font-family: sans-serif;
-        font-weight: bold;
-      font-size: 11px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 1.5rem;
     }
 
 </style>
@@ -74,18 +75,82 @@
 
 <div class="heatmap"></div>
 
-<div class="category">
-    <span style="background-color: #ffe6e6">Research </span>
-    <span style="background-color: #ffa8a8">Interview</span>
-    <span style="background-color: #ff7070">Ideation</span>
-    <span style="background-color: #fe2d2d">Prototyping</span>
-    <span style="background-color: #d00101">Testing</span>
-    <span style="background-color: #9d0000">Brainstorming</span>
-    <span style="background-color: #700000">Developing</span>
-    <span style="background-color: #330000">Launching</span>
-    <span style="background-color: wheat">(Add Your Own)</span>
-</div>
+<!-- <div class="category">
+    <span style="background-color: #ff5722">Research </span>
+    <span style="background-color: #ff8a65">Interview</span>
+    <span style="background-color: #e64a19">Ideation</span>
+    <span style="background-color: #ffeb3b">Testing</span>
+    <span style="background-color: #fbc02d">Mapping</span>
+
+    <span style="background-color: #ffff00">Storyboard</span>
+    <span style="background-color: #8bc34a">Prototype</span>
+    <span style="background-color: #dcedc8">Iteration</span>
+    <span style="background-color: #ffeb3b">Sketching</span>
+    <span style="background-color: #fbc02d">Analysis</span>
+<br>
+    <span style="background-color: #ffff00">Summary</span>
+    <span style="background-color: #8bc34a">Articulation</span>
+    <span style="background-color: #dcedc8">Exploration</span>
+    <span style="background-color: #ffeb3b">Brainstorm</span>
+    <span style="background-color: #fbc02d">Deployment</span>
+
+    <span style="background-color: #ffff00">Creation</span>
+    <span style="background-color: #8bc34a">Model making</span>
+    <span style="background-color: #dcedc8">Printing</span>
+    <span style="background-color: #ffeb3b">User study</span>
+    <span style="background-color: #ffccbc">(Add Your Own)</span>
+</div> -->
   
+
+<div class="category">
+    <span style="background-color: #0168C6">Research </span>
+    <span style="background-color: #027EE2">Interview</span>
+    <span style="background-color: #01ACFE">Ideation</span>
+    <span style="background-color: #8EDBF0">Testing</span>
+    <span style="background-color: #AAEDF4">Mapping</span>
+
+    <span style="background-color: #E77F93">Storyboard</span>
+    <span style="background-color: #FFC8DB">Prototype</span>
+    <span style="background-color: #FFE8EF">Iteration</span>
+    <span style="background-color: #F4F5F1">Sketching</span>
+    <span style="background-color: #01A874">Analysis</span>
+<br>
+    <span style="background-color: #00CE9E">Summary</span>
+    <span style="background-color: #00DCB5">Articulation</span>
+    <span style="background-color: #92F4DA">Exploration</span>
+    <span style="background-color: #F5490A">Brainstorm</span>
+    <span style="background-color: #FEB614">Deployment</span>
+
+    <span style="background-color: #FAEC57">Creation</span>
+    <span style="background-color: #B6D673">Model making</span>
+    <span style="background-color: #9DA1A4">Printing</span>
+    <span style="background-color: #6C7376">User study</span>
+    <span style="background-color: #C1C2B1">(Add Your Own)</span>
+</div>
+
+<!-- 1 Research
+2 Interview
+3 Ideation
+4 Testing
+5 Mapping
+6 Storyboard
+7  Prototype
+8 Iteration
+9 Sketching
+10 Analysis
+11 Summary
+12 Articulation
+13 Exploration
+14 Brainstorm
+15 Deployment
+16 Creation
+17 Model making
+18 Printing
+19 User study
+20 Documentation
+ -->
+
+
 </body>
 
 <script src="//d3js.org/d3.v3.min.js"></script>
@@ -138,11 +203,17 @@
     var colorScale = d3.scale.threshold()
         .domain([2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
         .range([
-          "#ff5722", "#ffccbc", "#ff8a65", "#ff5722", "#e64a19", 
-          "#bf360c", "#ffeb3b", "#fff9c4", "#fff176", "#ffeb3b", 
-          "#fbc02d", "#f57f17", "#ffff00", "#8bc34a", "#dcedc8", 
-          "#9ccc65", "#7cb342", "#558b2f", "#ccff90", "#69f0ae"
+          "#0168C6", "#027EE2", "#01ACFE", "#8EDBF0", "#AAEDF4", 
+          "#E77F93", "#FFC8DB", "#FFE8EF", "#F4F5F1", "#01A874", 
+          "#00CE9E", "#00DCB5", "#92F4DA", "#F5490A", "#FEB614", 
+          "#FAEC57", "#B6D673", "#9DA1A4", "#6C7376", "#C1C2B1"
           ]);
+        // .range([
+        //   "#ff5722", "#ffccbc", "#ff8a65", "#ff5722", "#e64a19", 
+        //   "#bf360c", "#ffeb3b", "#fff9c4", "#fff176", "#ffeb3b", 
+        //   "#fbc02d", "#f57f17", "#ffff00", "#8bc34a", "#dcedc8", 
+        //   "#9ccc65", "#7cb342", "#558b2f", "#ccff90", "#69f0ae"
+        //   ]);
         // .range([
         //   "#e57373", "#f06292", "#ba68c8", "#9575cd", "#7986cb", 
         //   "#64b5f6", "#4fc3f7", "#4dd0e1", "#4db6ac", "#81c784", 
