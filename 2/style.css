@@ -7,6 +7,10 @@ font-family: 'Merriweather Sans', sans-serif;
   fill: #b9b9b9;
 }
 
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
 .lotr-content-wrapper {
 	max-width: 900px;
 	margin: 0 auto;
@@ -71,7 +75,7 @@ a, a:link, a:visited, a:active {
 }
 
 .MiddleEarth {
-	
+
 	font-family: 'Merriweather Sans', sans-serif;
 	color: #53821a;
 }
