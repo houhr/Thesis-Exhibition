@@ -2,24 +2,27 @@
 <!-- Coded by Linne S. Huang -->
 
 <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,400i" rel="stylesheet">
+
 <style>
 
     body {
     margin-bottom: 10vh;
+    font-family: 'Merriweather Sans', sans-serif;
     }
 
     .title {
+    font-family: 'Merriweather', sans-serif;
     display: block;
+    text-align: center;
     margin-left: auto;
-    margin-right: auto; 
-    width: 20vw;
+    margin-right: auto;
     margin-top: 10vh;
-    font-family: sans-serif;
     font-size: 50px;
     font-weight: bold;
     color: black;
   }
-  
+
 
     .heatmap {
     display: block;
@@ -36,12 +39,11 @@
   }
 
   .axis text {
-      font-family: sans-serif;
       font-weight: bold;
       font-size: 11px;
       fill: black;
   }
-  
+
     .tooltip {
   position: absolute;
   text-align: center;
@@ -63,7 +65,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50vw;
-    font-family: sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     font-weight: bold;
     font-size: 11px;
     line-height: 1.5rem;
@@ -100,7 +102,7 @@
     <span style="background-color: #ffeb3b">User study</span>
     <span style="background-color: #ffccbc">(Add Your Own)</span>
 </div> -->
-  
+
 
 <div class="category">
     <span style="background-color: #0168C6">Research </span>
@@ -159,7 +161,7 @@
   var itemSize = 52,
       cellSize = itemSize - 15,
       margin = {top: 100, right: 20, bottom: 20, left: 250};
-      
+
   var width = 900 - margin.right - margin.left,
       height = 1200 - margin.top - margin.bottom;
 
@@ -203,21 +205,21 @@
     var colorScale = d3.scale.threshold()
         .domain([2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
         .range([
-          "#0168C6", "#027EE2", "#01ACFE", "#8EDBF0", "#AAEDF4", 
-          "#E77F93", "#FFC8DB", "#FFE8EF", "#F4F5F1", "#01A874", 
-          "#00CE9E", "#00DCB5", "#92F4DA", "#F5490A", "#FEB614", 
+          "#0168C6", "#027EE2", "#01ACFE", "#8EDBF0", "#AAEDF4",
+          "#E77F93", "#FFC8DB", "#FFE8EF", "#F4F5F1", "#01A874",
+          "#00CE9E", "#00DCB5", "#92F4DA", "#F5490A", "#FEB614",
           "#FAEC57", "#B6D673", "#9DA1A4", "#6C7376", "#C1C2B1"
           ]);
         // .range([
-        //   "#ff5722", "#ffccbc", "#ff8a65", "#ff5722", "#e64a19", 
-        //   "#bf360c", "#ffeb3b", "#fff9c4", "#fff176", "#ffeb3b", 
-        //   "#fbc02d", "#f57f17", "#ffff00", "#8bc34a", "#dcedc8", 
+        //   "#ff5722", "#ffccbc", "#ff8a65", "#ff5722", "#e64a19",
+        //   "#bf360c", "#ffeb3b", "#fff9c4", "#fff176", "#ffeb3b",
+        //   "#fbc02d", "#f57f17", "#ffff00", "#8bc34a", "#dcedc8",
         //   "#9ccc65", "#7cb342", "#558b2f", "#ccff90", "#69f0ae"
         //   ]);
         // .range([
-        //   "#e57373", "#f06292", "#ba68c8", "#9575cd", "#7986cb", 
-        //   "#64b5f6", "#4fc3f7", "#4dd0e1", "#4db6ac", "#81c784", 
-        //   "#aed581", "#dce775", "#fff176", "#ffd54f", "#ffb74d", 
+        //   "#e57373", "#f06292", "#ba68c8", "#9575cd", "#7986cb",
+        //   "#64b5f6", "#4fc3f7", "#4dd0e1", "#4db6ac", "#81c784",
+        //   "#aed581", "#dce775", "#fff176", "#ffd54f", "#ffb74d",
         //   "#ff8a65", "#a1887f", "#e0e0e0", "#90a4ae", "wheat"
         //   ]);
         //.range(["red", "yellow" ,"blue", "purple", "salmon"]);
@@ -230,10 +232,10 @@
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    
 
-    
-    
+
+
+
     var cells = svg.selectAll('rect')
         .data(data)
         .enter().append('g').append('rect')
@@ -242,11 +244,11 @@
         .attr('height', cellSize/2)
         .attr('y', function(d) { return yScale(d.country); })
         .attr('x', function(d) { return xScale(d.product); })
-        .attr('fill', function(d) { return colorScale(d.value); })  
+        .attr('fill', function(d) { return colorScale(d.value); })
         .on("mouseover", mouseover)
             .on("mousemove", mousemove)
             .on("mouseout", mouseout);
-    
+
     var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("display", "none");
@@ -257,7 +259,7 @@
 
     function mousemove() {
       div.text("I feel..." + d3.event.pageX)
-      //div.body(d.value) 
+      //div.body(d.value)
          .style("left", (d3.event.pageX - 34) + "px")
          .style("top", (d3.event.pageY - 12) + "px");
     }
@@ -266,7 +268,7 @@
       div.style("display", "none");
     }
 
-    
+
 
     svg.append("g")
         .attr("class", "y axis")
