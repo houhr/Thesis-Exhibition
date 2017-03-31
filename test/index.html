@@ -34,11 +34,20 @@
     .node {
       position: absolute;
       overflow: hidden;
+      background: #ddd;
     }
 
     .node-label {
       padding: 4px;
       line-height: 1em;
+    }
+
+    #VivianWang {
+      background: url(images/VivianWang.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
 
   </style>
@@ -82,6 +91,8 @@
 
       treemap(root);
 
+      console.log(root.descendants());
+
       d3.select("body")
         .selectAll(".node")
         .data(root.leaves())
@@ -92,10 +103,9 @@
           .style("top", function(d) { return d.y0 + "px"; })
           .style("width", function(d) { return d.x1 - d.x0 + "px"; })
           .style("height", function(d) { return d.y1 - d.y0 + "px"; })
-          .style("background", function(d) { while (d.depth > 1) d = d.parent; return color(d.id); })
+          .attr("id", function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1).split(' ').join(''); })
         .append("div")
           .attr("class", "node-label")
-          .attr("id", function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1).split(' ').join(''); })
           .text(function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1).split(/(?=[A-Z][^A-Z])/g).join("\n"); })
 
 
