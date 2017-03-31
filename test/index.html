@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Test</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,400i" rel="stylesheet">
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-format.v1.min.js"></script>
+  <script>
+
+    var margin = {top: 20, right: 0, bottom: 0, left: 0},
+        width = 960 - margin.left - margin.right,
+        height = 600 - margin.top - margin.bottom;
+
+    var format = d3.format(',d');
+
+    var color = d3.scaleOrdinal()
+                  .range(d3.schemeCategory10
+                  .map(function(c) { c = d3.rgb(c); c.opacity = 0.6; return c; }));
+
+    var stratify = d3.stratify()
+                     .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf('.')); });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>
