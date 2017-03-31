@@ -7,68 +7,70 @@
 <style>
 
     body {
-    margin-bottom: 10vh;
-    font-family: 'Merriweather Sans', sans-serif;
+        margin-bottom: 10vh;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-transform: uppercase;
     }
 
     .title {
-    font-family: 'Merriweather', sans-serif;
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-    font-size: 50px;
-    font-weight: bold;
-    color: black;
-  }
+        font-family: 'Merriweather', sans-serif;
+        display: block;
+        margin: 20vh auto 10vh auto;
+        width: 50vw;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+    }
 
 
     .heatmap {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 65vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65vw;
     }
 
-  .axis path,
-  .axis line {
-    fill: none;
-    stroke: none;
-    shape-rendering: crispEdges;
-  }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: none;
+        shape-rendering: crispEdges;
+    }
 
-  .axis text {
-      font-weight: bold;
-      font-size: 11px;
-      fill: black;
-  }
+    .axis text {
+        text-transform: uppercase;
+        font-size: 11px;
+        fill: black;
+     }
 
     .tooltip {
-  position: absolute;
-  text-align: center;
-  width: 60px;
-  height: 12px;
-  padding: 8px;
-  margin-top: -20px;
-  font: 1rem sans-serif;
-  background: rgba(255, 255, 255, 0.5);
-  pointer-events: none;
-}
+        position: absolute;
+        text-align: center;
+        width: 60px;
+        height: 12px;
+        padding: 8px;
+        margin-top: -20px;
+        font: 1rem sans-serif;
+        background: rgba(255, 255, 255, 0.5);
+        pointer-events: none;
+    }
 
     span {
         margin-right: 5px;
     }
 
     .category {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 1.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30vw;
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: bold;
+        font-size: 0.2rem;
+        line-height: 1.5rem;
     }
 
 </style>
@@ -259,7 +261,6 @@
 
     function mousemove() {
       div.text("I feel..." + d3.event.pageX)
-      //div.body(d.value)
          .style("left", (d3.event.pageX - 34) + "px")
          .style("top", (d3.event.pageY - 12) + "px");
     }
@@ -290,4 +291,4 @@
 
 
   });
-</script>
+</script> 
