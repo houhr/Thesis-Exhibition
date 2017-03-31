@@ -99,7 +99,7 @@ d3.json('lotr_words_location.json', function (error, dataAgg) {
 					
 	//Color for the unique locations
 	var locations = ["Bree", "Emyn Muil", "Fangorn", "Gondor",  "Isengard", "Lothlorien", "Misty Mountains", "Mordor",  "Moria",   "Parth Galen", "Rivendell", "Rohan",   "The Shire"];
-	var colors = ["#5a3511", "#47635f",   "#223e15", "#C6CAC9", "#0d1e25",  "#53821a",    "#4387AA",         "#770000", "#373F41", "#602317",     "#8D9413",   "#c17924", "#3C7E16"];
+	var colors = ["#f2d942", "#00ce9e",   "#0168c6", "#aaedf4", "#fec7d9",  "#fc5409",    "#eac905","#01ab83", "#0258a7", "#04b6c9",     "#00e4fc",   "#f90655", "#ca3f02"];
 	var color = d3.scaleOrdinal()
     	.domain(locations)
     	.range(colors);
@@ -225,7 +225,7 @@ d3.json('lotr_words_location.json', function (error, dataAgg) {
 	outerLabels.append("text")
 		.attr("class", "outer-label-value")
 		.attr("dy", "1.5em")
-		.text(function(d,i){ return numFormat(d.value) + " words"; });
+		.text(function(d,i){ return numFormat(d.value); });
 
 	////////////////////////////////////////////////////////////
 	////////////////// Draw inner strings //////////////////////
@@ -324,7 +324,7 @@ d3.json('lotr_words_location.json', function (error, dataAgg) {
 				
 			//Return the word count to what it was
 			d3.selectAll(".outer-label-value")	
-				.text(function(s,i){ return numFormat(s.value) + " words"; });
+				.text(function(s,i){ return numFormat(s.value) ; });
 				
 			//Show all arcs again
 			d3.selectAll(".arc-wrapper")
