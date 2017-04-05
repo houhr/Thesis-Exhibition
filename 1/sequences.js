@@ -17,7 +17,7 @@ var colors = {
   "Practical": "#aaedf4",
   "Conceptual+Practical": "#fc5409",
   "Title": "#ff7e44",
-  "SelfRegulateAttention":"#ff7e44",
+  "SelfRegulateAttention":"#ff7e44"
   "Attention":"#fc9262",
   "Addiction":"#498bc6",
   "Tangible":"#66d6bc",
