@@ -5,7 +5,7 @@ var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 75, h: 30, s: 3, t: 10
+  w: 123, h: 30, s: 4, t: 6
 };
 
 // Mapping of step names to colors.
@@ -16,6 +16,13 @@ var colors = {
   "Conceptual": "#fec7d9",
   "Practical": "#aaedf4",
   "Conceptual+Practical": "#fc5409",
+  "Wood":"#a2d3c6",
+  "SelfRegulateAttention":"#d2d0a1",
+  "Attention":"#cbf4d2",
+  "Addiction":"#dbcdf2",
+  "Tangible":"#f1cceb",
+  "Distraction":"#fcccd2",
+  "Control":"#fcf3cc",
   "end": "#fc5409"
 };
 
@@ -93,8 +100,12 @@ function mouseover(d) {
     percentageString = "< 0.1%";
   }
 
+//   d3.select("#percentage")
+//       .text(percentageString+<br>+d.value);
   d3.select("#percentage")
-      .text(percentageString);
+      .html(d.value + " of " + totalSize +"<br />" +d.name )
+  		.attr("text-anchor", "middle");
+
 
   d3.select("#explanation")
       .style("visibility", "");
@@ -193,7 +204,7 @@ function updateBreadcrumbs(nodeArray, percentageString) {
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
       .attr("y", b.h / 2)
-      .attr("dy", "0.35em")
+      .attr("dy", "0.4em")
       .attr("text-anchor", "middle")
       .text(function(d) { return d.name; });
 
