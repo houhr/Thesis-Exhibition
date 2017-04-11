@@ -73,6 +73,8 @@
         line-height: 1.5rem;
     }
 
+
+
 </style>
 <body>
 <div class="title">How Was Your Thesis Journey?</div>
@@ -132,7 +134,16 @@
     <span style="background-color: #D07C98">Printing</span>
     <span style="background-color: #DB7D95">User study</span>
     <span style="background-color: #E77F93">(Add Your Own)</span>
+<br>
+<br>
+<br>
+<a href="#">Alphabetical Order</a><br>
+<a href="byDiscipline.html">Discipline</a><br>
+<a href="byCountry.html">Country</a>
+
 </div>
+
+
 
 <!-- 1 Research
 2 Interview
@@ -164,7 +175,7 @@
 <script>
   var itemSize = 52,
       cellSize = itemSize - 15,
-      margin = {top: 100, right: 20, bottom: 20, left: 250};
+      margin = {top: 100, right: 20, bottom: 50, left: 250};
 
   var width = 900 - margin.right - margin.left,
       height = 1200 - margin.top - margin.bottom;
@@ -175,14 +186,21 @@
     var data = response.map(function( item ) {
         var newItem = {};
         newItem.country = item.x;
-        newItem.product = item.y;
+        newItem.discipline = item.y;
         newItem.value = item.value;
+
+        //newItem.discipline = item.discipline;
+        // newItem.nation = item.country;
+
+        // original: x -> country  y -> product
 
         return newItem;
     })
 
-    var x_elements = d3.set(data.map(function( item ) { return item.product; } )).values(),
+    var x_elements = d3.set(data.map(function( item ) { return item.discipline; } )).values(),
         y_elements = d3.set(data.map(function( item ) { return item.country; } )).values();
+
+    var a_elements = d3.set(data.map(function( item ) { return item.discipline; } )).values();
 
     var xScale = d3.scale.ordinal()
         .domain(x_elements)
@@ -238,8 +256,6 @@
 
 
 
-
-
     var cells = svg.selectAll('rect')
         .data(data)
         .enter().append('g').append('rect')
@@ -247,7 +263,7 @@
         .attr('width', cellSize)
         .attr('height', cellSize/2)
         .attr('y', function(d) { return yScale(d.country); })
-        .attr('x', function(d) { return xScale(d.product); })
+        .attr('x', function(d) { return xScale(d.discipline); })
         .attr('fill', function(d) { return colorScale(d.value); })
 //         .on("mouseover", mouseover)
 //             .on("mousemove", mousemove)
