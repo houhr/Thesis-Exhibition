@@ -1,0 +1,46 @@
+{
+  "name": "MFA Design",
+  "children": [
+    {
+      "name": "Interaction Design",
+      "children" : [
+        {
+          "name": "Student One",
+          "value": 100
+        },
+        {
+          "name": "Student Two",
+          "value": 200,
+          "image": "https://houhr.github.io/Thesis-Exhibition/test/images/VivianWang.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Graphic Design",
+      "children" : [
+        {
+          "name": "Student Three",
+          "value": 100
+        },
+        {
+          "name": "Student Four",
+          "value": 200
+        }
+      ]
+    },
+    {
+      "name": "Industrial Design",
+      "children" : [
+        {
+          "name": "Student Five",
+          "value": 100
+        },
+        {
+          "name": "Student Six",
+          "value": 200
+        }
+      ]
+    }
+  ]
+
+}

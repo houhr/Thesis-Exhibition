@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Test</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,400i" rel="stylesheet">
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    body {
+      position: relative;
+    }
+
+    .node {
+      position: absolute;
+      overflow: hidden;
+      background: #ddd;
+    }
+
+    .node-label {
+      padding: 4px;
+      line-height: 1em;
+    }
+
+    #VivianWang {
+      background: url(images/VivianWang.jpg) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+  </style>
+
+</head>
+<body>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-format.v1.min.js"></script>
+  <script>
+
+    var margin = {top: 20, right: 0, bottom: 0, left: 0},
+        width = 960 - margin.left - margin.right,
+        height = 600 - margin.top - margin.bottom;
+
+    var format = d3.format(',d');
+
+    var stratify = d3.stratify()
+                     .parentId(function(d) { return d.id.substring(0, d.id.lastIndexOf('.')); });
+
+    var treemap = d3.treemap()
+                    .size([width, height])
+                    .padding(1)
+                    .round(true);
+
+    d3.json("test2.json", function(error, treeData) {
+
+      if (error) throw error;
+
+      console.log(treeData);
+
+      var nodes = d3.hierarchy(treeData, function(d) {
+        return d.children;
+      });
+
+      console.log(nodes);
+
+      treemap(nodes);
+
+      d3.select("body")
+        .selectAll(".node")
+        .data(nodes.leaves())
+        .enter().append("div")
+          .attr("class", "node")
+          .attr("title", function(d) { return d.data.name + "\n" + format(d.data.value); })
+          .style("left", function(d) { return d.x0 + "px"; })
+          .style("top", function(d) { return d.y0 + "px"; })
+          .style("width", function(d) { return d.x1 - d.x0 + "px"; })
+          .style("height", function(d) { return d.y1 - d.y0 + "px"; })
+          .append("div")
+            .attr("class", "node-label")
+            .text(function(d) { return d.data.name; console.log(d.data.name);})
+        //   .attr("id", function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1).split(' ').join(''); })
+        // .append("div")
+        //   .attr("class", "node-label")
+        //   .text(function(d) { return d.id.substring(d.id.lastIndexOf(".") + 1).split(/(?=[A-Z][^A-Z])/g).join("\n"); })
+
+
+    });
+
+
+
+  </script>
+
+</body>
+</html>
