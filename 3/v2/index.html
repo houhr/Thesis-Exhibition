@@ -7,68 +7,70 @@
 <style>
 
     body {
-    margin-bottom: 10vh;
-    font-family: 'Merriweather Sans', sans-serif;
+        margin-bottom: 10vh;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-transform: uppercase;
     }
 
     .title {
-    font-family: 'Merriweather', sans-serif;
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-    font-size: 50px;
-    font-weight: bold;
-    color: black;
-  }
+        font-family: 'Merriweather', sans-serif;
+        display: block;
+        margin: 20vh auto 10vh auto;
+        width: 50vw;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+    }
 
 
     .heatmap {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 65vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65vw;
     }
 
-  .axis path,
-  .axis line {
-    fill: none;
-    stroke: none;
-    shape-rendering: crispEdges;
-  }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: none;
+        shape-rendering: crispEdges;
+    }
 
-  .axis text {
-      font-weight: bold;
-      font-size: 11px;
-      fill: black;
-  }
+    .axis text {
+        text-transform: uppercase;
+        font-size: 11px;
+        fill: black;
+     }
 
     .tooltip {
-  position: absolute;
-  text-align: center;
-  width: 60px;
-  height: 12px;
-  padding: 8px;
-  margin-top: -20px;
-  font: 1rem sans-serif;
-  background: rgba(255, 255, 255, 0.5);
-  pointer-events: none;
-}
+        position: absolute;
+        text-align: center;
+        width: 60px;
+        height: 12px;
+        padding: 8px;
+        margin-top: -20px;
+        font: 1rem sans-serif;
+        background: rgba(255, 255, 255, 0.5);
+        pointer-events: none;
+    }
 
     span {
         margin-right: 5px;
     }
 
     .category {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: bold;
-    font-size: 11px;
-    line-height: 1.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30vw;
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: bold;
+        font-size: 0.2rem;
+        line-height: 1.5rem;
     }
 
 </style>
@@ -105,29 +107,31 @@
 
 
 <div class="category">
+    <p>Pre-Production</p>
     <span style="background-color: #0168C6">Research </span>
-    <span style="background-color: #027EE2">Interview</span>
-    <span style="background-color: #01ACFE">Ideation</span>
-    <span style="background-color: #8EDBF0">Testing</span>
-    <span style="background-color: #AAEDF4">Mapping</span>
-
-    <span style="background-color: #E77F93">Storyboard</span>
-    <span style="background-color: #FFC8DB">Prototype</span>
-    <span style="background-color: #FFE8EF">Iteration</span>
-    <span style="background-color: #F4F5F1">Sketching</span>
-    <span style="background-color: #01A874">Analysis</span>
+    <span style="background-color: #186AC0">Interview</span>
+    <span style="background-color: #236BBE">Ideation</span>
+    <span style="background-color: #2F6CBB">Testing</span>
+    <span style="background-color: #3A6DB9">Mapping</span>
 <br>
-    <span style="background-color: #00CE9E">Summary</span>
-    <span style="background-color: #00DCB5">Articulation</span>
-    <span style="background-color: #92F4DA">Exploration</span>
-    <span style="background-color: #F5490A">Brainstorm</span>
-    <span style="background-color: #FEB614">Deployment</span>
-
-    <span style="background-color: #FAEC57">Creation</span>
-    <span style="background-color: #B6D673">Model making</span>
-    <span style="background-color: #9DA1A4">Printing</span>
-    <span style="background-color: #6C7376">User study</span>
-    <span style="background-color: #C1C2B1">(Add Your Own)</span>
+    <span style="background-color: #466EB6">Storyboard</span>
+    <span style="background-color: #5170B4">Prototype</span>
+    <span style="background-color: #5D71B1">Iteration</span>
+    <span style="background-color: #6872AF">Sketching</span>
+    <span style="background-color: #7473AC">Analysis</span>
+<br>
+    <p>Post-Production</p>
+    <span style="background-color: #7F74A9">Summary</span>
+    <span style="background-color: #8B75A7">Articulation</span>
+    <span style="background-color: #9676A4">Exploration</span>
+    <span style="background-color: #A278A2">Brainstorm</span>
+    <span style="background-color: #AD799F">Deployment</span>
+<br>
+    <span style="background-color: #B97A9D">Creation</span>
+    <span style="background-color: #C47B9A">Model making</span>
+    <span style="background-color: #D07C98">Printing</span>
+    <span style="background-color: #DB7D95">User study</span>
+    <span style="background-color: #E77F93">(Add Your Own)</span>
 </div>
 
 <!-- 1 Research
@@ -205,10 +209,10 @@
     var colorScale = d3.scale.threshold()
         .domain([2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
         .range([
-          "#0168C6", "#027EE2", "#01ACFE", "#8EDBF0", "#AAEDF4",
-          "#E77F93", "#FFC8DB", "#FFE8EF", "#F4F5F1", "#01A874",
-          "#00CE9E", "#00DCB5", "#92F4DA", "#F5490A", "#FEB614",
-          "#FAEC57", "#B6D673", "#9DA1A4", "#6C7376", "#C1C2B1"
+          "#0168C6", "#186AC0", "#236BBE", "#2F6CBB", "#3A6DB9",
+          "#466EB6", "#5170B4", "#5D71B1", "#6872AF", "#7473AC",
+          "#7F74A9", "#8B75A7", "#9676A4", "#A278A2", "#AD799F",
+          "#B97A9D", "#C47B9A", "#D07C98", "#DB7D95", "#E77F93"
           ]);
         // .range([
         //   "#ff5722", "#ffccbc", "#ff8a65", "#ff5722", "#e64a19",
@@ -245,28 +249,27 @@
         .attr('y', function(d) { return yScale(d.country); })
         .attr('x', function(d) { return xScale(d.product); })
         .attr('fill', function(d) { return colorScale(d.value); })
-        .on("mouseover", mouseover)
-            .on("mousemove", mousemove)
-            .on("mouseout", mouseout);
+//         .on("mouseover", mouseover)
+//             .on("mousemove", mousemove)
+//             .on("mouseout", mouseout);
 
-    var div = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("display", "none");
+//     var div = d3.select("body").append("div")
+//     .attr("class", "tooltip")
+//     .style("display", "none");
 
-    function mouseover() {
-      div.style("display", "inline");
-    }
+//     function mouseover() {
+//       div.style("display", "inline");
+//     }
 
-    function mousemove() {
-      div.text("I feel..." + d3.event.pageX)
-      //div.body(d.value)
-         .style("left", (d3.event.pageX - 34) + "px")
-         .style("top", (d3.event.pageY - 12) + "px");
-    }
+//     function mousemove() {
+//       div.text("I feel..." + d3.event.pageX)
+//          .style("left", (d3.event.pageX - 34) + "px")
+//          .style("top", (d3.event.pageY - 12) + "px");
+//     }
 
-    function mouseout() {
-      div.style("display", "none");
-    }
+//     function mouseout() {
+//       div.style("display", "none");
+//     }
 
 
 
@@ -290,4 +293,4 @@
 
 
   });
-</script>
+</script> 

@@ -5,21 +5,29 @@ var radius = Math.min(width, height) / 2;
 
 // Breadcrumb dimensions: width, height, spacing, width of tip/tail.
 var b = {
-  w: 75, h: 30, s: 3, t: 10
+  w: 123, h: 30, s: 4, t: 6
 };
 
 // Mapping of step names to colors.
 var colors = {
-  "home": "#5687d1",
-  "product": "#7b615c",
-  "search": "#de783b",
-  "account": "#6ab975",
-  "other": "#a173d1",
-  "end": "#bbbbbb"
+  "Physical": "#0168c6",
+  "Digital": "#00ce9e",
+  "Digital+Physical": "#f2d942",
+  "Conceptual": "#fec7d9",
+  "Practical": "#aaedf4",
+  "Conceptual+Practical": "#fc5409",
+  "Wood":"#a2d3c6",
+  "SelfRegulateAttention":"#d2d0a1",
+  "Attention":"#cbf4d2",
+  "Addiction":"#dbcdf2",
+  "Tangible":"#f1cceb",
+  "Distraction":"#fcccd2",
+  "Control":"#fcf3cc",
+  "end": "#fc5409"
 };
 
 // Total size of all segments; we set this later, after loading the data.
-var totalSize = 0; 
+var totalSize = 0;
 
 var vis = d3.select("#chart").append("svg:svg")
     .attr("width", width)
@@ -92,8 +100,12 @@ function mouseover(d) {
     percentageString = "< 0.1%";
   }
 
+//   d3.select("#percentage")
+//       .text(percentageString+<br>+d.value);
   d3.select("#percentage")
-      .text(percentageString);
+      .html(d.value + " of " + totalSize +"<br />" +d.name )
+  		.attr("text-anchor", "middle");
+
 
   d3.select("#explanation")
       .style("visibility", "");
@@ -192,7 +204,7 @@ function updateBreadcrumbs(nodeArray, percentageString) {
   entering.append("svg:text")
       .attr("x", (b.w + b.t) / 2)
       .attr("y", b.h / 2)
-      .attr("dy", "0.35em")
+      .attr("dy", "0.4em")
       .attr("text-anchor", "middle")
       .text(function(d) { return d.name; });
 
@@ -262,7 +274,7 @@ function toggleLegend() {
 
 // Take a 2-column CSV and transform it into a hierarchical structure suitable
 // for a partition layout. The first column is a sequence of step names, from
-// root to leaf, separated by hyphens. The second column is a count of how 
+// root to leaf, separated by hyphens. The second column is a count of how
 // often that sequence occurred.
 function buildHierarchy(csv) {
   var root = {"name": "root", "children": []};

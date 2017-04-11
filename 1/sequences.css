@@ -1,6 +1,6 @@
 body {
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   background-color: #fff;
   width: 960px;
@@ -42,14 +42,14 @@ body {
 
 #explanation {
   position: absolute;
-  top: 260px;
-  left: 305px;
-  width: 140px;
+  top: 270px;
+  left: 264px;
+  width: 216px;
   text-align: center;
   color: #666;
   z-index: -1;
 }
 
 #percentage {
-  font-size: 2.5em;
+  font-size: 2em;
 }

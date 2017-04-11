@@ -1,0 +1,447 @@
+[
+  {
+    "location": "Self Awareness",
+    "character": "Linn",
+    "words": 679
+  },
+  {
+    "location": "Self Awareness",
+    "character": "Pei Pei",
+    "words": 124
+  },
+  {
+    "location": "Self Awareness",
+    "character": "Kyu",
+    "words": 239
+  },
+  {
+    "location": "Self Awareness",
+    "character": "Krishna",
+    "words": 1064
+  },
+  {
+    "location": "Self Awareness",
+    "character": "Peixin",
+    "words": 173
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Hongru",
+    "words": 258
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Linn",
+    "words": 125
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Peixin",
+    "words": 56
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Pei Pei",
+    "words": 76
+  },
+  {
+    "location": "Change Behaviors",
+    "character": "Kyu",
+    "words": 71
+  },
+  {
+    "location": "Lifestyle Changes",
+    "character": "Hongru",
+    "words": 3
+  },
+  {
+    "location": "Lifestyle Changes",
+    "character": "Pei Pei",
+    "words": 108
+  },
+  {
+    "location": "Lifestyle Changes",
+    "character": "Veena",
+    "words": 45
+  },
+  {
+    "location": "Lifestyle Changes",
+    "character": "Krishna",
+    "words": 224
+  },
+  {
+    "location": "Lifestyle Changes",
+    "character": "Peixin",
+    "words": 116
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Linn",
+    "words": 153
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Sophie",
+    "words": 259
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Veena",
+    "words": 38
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Aaron",
+    "words": 34
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Kyu",
+    "words": 105
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Krishna",
+    "words": 276
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Hongru",
+    "words": 232
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Peixin",
+    "words": 29
+  },
+  {
+    "location": "Novel Idea",
+    "character": "Pei Pei",
+    "words": 27
+  },
+  {
+    "location": "Educate People",
+    "character": "Aaron",
+    "words": 11
+  },
+  {
+    "location": "Educate People",
+    "character": "Peixin",
+    "words": 17
+  },
+  {
+    "location": "Educate People",
+    "character": "Pei Pei",
+    "words": 10
+  },
+  {
+    "location": "Educate People",
+    "character": "Kyu",
+    "words": 3
+  },
+  {
+    "location": "Educate People",
+    "character": "Hongru",
+    "words": 42
+  },
+  {
+    "location": "Educate People",
+    "character": "Sophie",
+    "words": 76
+  },
+  {
+    "location": "Educate People",
+    "character": "Krishna",
+    "words": 86
+  },
+  {
+    "location": "Educate People",
+    "character": "Veena",
+    "words": 66
+  },
+  {
+    "location": "Educate People",
+    "character": "Linn",
+    "words": 6
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Krishna",
+    "words": 762
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Veena",
+    "words": 102
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Aaron",
+    "words": 19
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Peixin",
+    "words": 17
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Pei Pei",
+    "words": 21
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Kyu",
+    "words": 32
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Linn",
+    "words": 90
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Sophie",
+    "words": 55
+  },
+  {
+    "location": "Raise a Conversation",
+    "character": "Hongru",
+    "words": 98
+  },
+  {
+    "location": "Improve Communication",
+    "character": "Aaron",
+    "words": 68
+  },
+  {
+    "location": "Improve Communication",
+    "character": "Kyu",
+    "words": 64
+  },
+  {
+    "location": "Improve Communication",
+    "character": "Peixin",
+    "words": 11
+  },
+  {
+    "location": "Improve Communication",
+    "character": "Linn",
+    "words": 36
+  },
+  {
+    "location": "Improve Communication",
+    "character": "Pei Pei",
+    "words": 1
+  },
+  {
+    "location": "Improve Communication",
+    "character": "Hongru",
+    "words": 55
+  },
+  {
+    "location": "Improve Communication",
+    "character": "Sophie",
+    "words": 176
+  },
+  {
+    "location": "Improve Communication",
+    "character": "Veena",
+    "words": 165
+  },
+  {
+    "location": "Material Exploration",
+    "character": "Kyu",
+    "words": 89
+  },
+  {
+    "location": "Material Exploration",
+    "character": "Linn",
+    "words": 129
+  },
+  {
+    "location": "Material Exploration",
+    "character": "Pei Pei",
+    "words": 17
+  },
+  {
+    "location": "Material Exploration",
+    "character": "Sophie",
+    "words": 398
+  },
+  {
+    "location": "Material Exploration",
+    "character": "Hongru",
+    "words": 319
+  },
+  {
+    "location": "Material Exploration",
+    "character": "Veena",
+    "words": 60
+  },
+  {
+    "location": "Material Exploration",
+    "character": "Aaron",
+    "words": 52
+  },
+  {
+    "location": "Material Exploration",
+    "character": "Peixin",
+    "words": 20
+  },
+  {
+    "location": "Social Life",
+    "character": "Kyu",
+    "words": 347
+  },
+  {
+    "location": "Social Life",
+    "character": "Linn",
+    "words": 223
+  },
+  {
+    "location": "No Industry Knowledge",
+    "character": "Hongru",
+    "words": 907
+  },
+  {
+    "location": "No Industry Knowledge",
+    "character": "Aaron",
+    "words": 407
+  },
+  {
+    "location": "No Industry Knowledge",
+    "character": "Pei Pei",
+    "words": 203
+  },
+  {
+    "location": "No Industry Knowledge",
+    "character": "Peixin",
+    "words": 281
+  },
+  {
+    "location": "No Industry Knowledge",
+    "character": "Krishna",
+    "words": 671
+  },
+  {
+    "location": "No Industry Knowledge",
+    "character": "Veena",
+    "words": 607
+  },
+  {
+    "location": "No Related Work",
+    "character": "Krishna",
+    "words": 524
+  },
+  {
+    "location": "No Related Work",
+    "character": "Aaron",
+    "words": 73
+  },
+  {
+    "location": "No Related Work",
+    "character": "Peixin",
+    "words": 297
+  },
+  {
+    "location": "No Related Work",
+    "character": "Pei Pei",
+    "words": 276
+  },
+  {
+    "location": "No Related Work",
+    "character": "Hongru",
+    "words": 108
+  },
+  {
+    "location": "No Related Work",
+    "character": "Veena",
+    "words": 89
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Sophie",
+    "words": 132
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Kyu",
+    "words": 822
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Linn",
+    "words": 491
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Krishna",
+    "words": 1155
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Pei Pei",
+    "words": 386
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Hongru",
+    "words": 175
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Veena",
+    "words": 72
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Peixin",
+    "words": 97
+  },
+  {
+    "location": "Tech Limitation",
+    "character": "Aaron",
+    "words": 8
+  },
+  {
+    "location": "Access to Users",
+    "character": "Aaron",
+    "words": 8
+  },
+  {
+    "location": "Access to Users",
+    "character": "Linn",
+    "words": 361
+  },
+  {
+    "location": "Access to Users",
+    "character": "Hongru",
+    "words": 128
+  },
+  {
+    "location": "Access to Users",
+    "character": "Krishna",
+    "words": 32
+  },
+  {
+    "location": "Access to Users",
+    "character": "Veena",
+    "words": 21
+  },
+  {
+    "location": "Access to Users",
+    "character": "Peixin",
+    "words": 3
+  },
+  {
+    "location": "Access to Users",
+    "character": "Pei Pei",
+    "words": 12
+  },
+  {
+    "location": "Access to Users",
+    "character": "Kyu",
+    "words": 753
+  }
+]
