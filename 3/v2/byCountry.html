@@ -1,0 +1,312 @@
+<!-- Example by D3.js -->
+<!-- Coded by Linne S. Huang -->
+
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:400,400i" rel="stylesheet">
+
+<style>
+
+    body {
+        margin-bottom: 10vh;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .title {
+        font-family: 'Merriweather', sans-serif;
+        display: block;
+        margin: 20vh auto 10vh auto;
+        width: 50vw;
+        text-align: center;
+        font-size: 1.5rem;
+        color: black;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+    }
+
+
+    .heatmap {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65vw;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: none;
+        shape-rendering: crispEdges;
+    }
+
+    .axis text {
+        text-transform: uppercase;
+        font-size: 11px;
+        fill: black;
+     }
+
+    .tooltip {
+        position: absolute;
+        text-align: center;
+        width: 60px;
+        height: 12px;
+        padding: 8px;
+        margin-top: -20px;
+        font: 1rem sans-serif;
+        background: rgba(255, 255, 255, 0.5);
+        pointer-events: none;
+    }
+
+    span {
+        margin-right: 5px;
+    }
+
+    .category {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30vw;
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: bold;
+        font-size: 0.2rem;
+        line-height: 1.5rem;
+    }
+
+
+
+</style>
+<body>
+<div class="title">How Was Your Thesis Journey?</div>
+
+<div class="heatmap"></div>
+
+<!-- <div class="category">
+    <span style="background-color: #ff5722">Research </span>
+    <span style="background-color: #ff8a65">Interview</span>
+    <span style="background-color: #e64a19">Ideation</span>
+    <span style="background-color: #ffeb3b">Testing</span>
+    <span style="background-color: #fbc02d">Mapping</span>
+
+    <span style="background-color: #ffff00">Storyboard</span>
+    <span style="background-color: #8bc34a">Prototype</span>
+    <span style="background-color: #dcedc8">Iteration</span>
+    <span style="background-color: #ffeb3b">Sketching</span>
+    <span style="background-color: #fbc02d">Analysis</span>
+<br>
+    <span style="background-color: #ffff00">Summary</span>
+    <span style="background-color: #8bc34a">Articulation</span>
+    <span style="background-color: #dcedc8">Exploration</span>
+    <span style="background-color: #ffeb3b">Brainstorm</span>
+    <span style="background-color: #fbc02d">Deployment</span>
+
+    <span style="background-color: #ffff00">Creation</span>
+    <span style="background-color: #8bc34a">Model making</span>
+    <span style="background-color: #dcedc8">Printing</span>
+    <span style="background-color: #ffeb3b">User study</span>
+    <span style="background-color: #ffccbc">(Add Your Own)</span>
+</div> -->
+
+
+<div class="category">
+    <p>Pre-Production</p>
+    <span style="background-color: #0168C6">Research </span>
+    <span style="background-color: #186AC0">Interview</span>
+    <span style="background-color: #236BBE">Ideation</span>
+    <span style="background-color: #2F6CBB">Testing</span>
+    <span style="background-color: #3A6DB9">Mapping</span>
+<br>
+    <span style="background-color: #466EB6">Storyboard</span>
+    <span style="background-color: #5170B4">Prototype</span>
+    <span style="background-color: #5D71B1">Iteration</span>
+    <span style="background-color: #6872AF">Sketching</span>
+    <span style="background-color: #7473AC">Analysis</span>
+<br>
+    <p>Post-Production</p>
+    <span style="background-color: #7F74A9">Summary</span>
+    <span style="background-color: #8B75A7">Articulation</span>
+    <span style="background-color: #9676A4">Exploration</span>
+    <span style="background-color: #A278A2">Brainstorm</span>
+    <span style="background-color: #AD799F">Deployment</span>
+<br>
+    <span style="background-color: #B97A9D">Creation</span>
+    <span style="background-color: #C47B9A">Model making</span>
+    <span style="background-color: #D07C98">Printing</span>
+    <span style="background-color: #DB7D95">User study</span>
+    <span style="background-color: #E77F93">(Add Your Own)</span>
+<br>
+<br>
+<br>
+<a href="#">Alphabetical Order</a><br>
+<a href="byDiscipline.html">Discipline</a><br>
+<a href="byCountry.html">Country</a>
+
+</div>
+
+
+
+<!-- 1 Research
+2 Interview
+3 Ideation
+4 Testing
+5 Mapping
+6 Storyboard
+7  Prototype
+8 Iteration
+9 Sketching
+10 Analysis
+11 Summary
+12 Articulation
+13 Exploration
+14 Brainstorm
+15 Deployment
+16 Creation
+17 Model making
+18 Printing
+19 User study
+20 Documentation
+ -->
+
+
+</body>
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+
+<script>
+  var itemSize = 52,
+      cellSize = itemSize - 15,
+      margin = {top: 100, right: 20, bottom: 50, left: 250};
+
+  var width = 900 - margin.right - margin.left,
+      height = 1200 - margin.top - margin.bottom;
+
+  var formatDate = d3.time.format("%Y-%m-%d");
+
+  d3.csv('byCountry.csv', function ( response ) {
+    var data = response.map(function( item ) {
+        var newItem = {};
+        newItem.country = item.x;
+        newItem.discipline = item.y;
+        newItem.value = item.value;
+
+        //newItem.discipline = item.discipline;
+        // newItem.nation = item.country;
+
+        // original: x -> country  y -> product
+
+        return newItem;
+    })
+
+    var x_elements = d3.set(data.map(function( item ) { return item.discipline; } )).values(),
+        y_elements = d3.set(data.map(function( item ) { return item.country; } )).values();
+
+    var a_elements = d3.set(data.map(function( item ) { return item.discipline; } )).values();
+
+    var xScale = d3.scale.ordinal()
+        .domain(x_elements)
+        .rangeBands([0, x_elements.length * itemSize]);
+
+    var xAxis = d3.svg.axis()
+        .scale(xScale)
+        .tickFormat(function (d) {
+            return d;
+        })
+        .orient("top");
+
+    var yScale = d3.scale.ordinal()
+        .domain(y_elements)
+        .rangeBands([0, y_elements.length * itemSize/2]); //the height of the bar
+
+    var yAxis = d3.svg.axis()
+        .scale(yScale)
+        .tickFormat(function (d) {
+            return d;
+        })
+        .orient("left");
+
+    var colorScale = d3.scale.threshold()
+        .domain([2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20])
+        .range([
+          "#0168C6", "#186AC0", "#236BBE", "#2F6CBB", "#3A6DB9",
+          "#466EB6", "#5170B4", "#5D71B1", "#6872AF", "#7473AC",
+          "#7F74A9", "#8B75A7", "#9676A4", "#A278A2", "#AD799F",
+          "#B97A9D", "#C47B9A", "#D07C98", "#DB7D95", "#E77F93"
+          ]);
+        // .range([
+        //   "#ff5722", "#ffccbc", "#ff8a65", "#ff5722", "#e64a19",
+        //   "#bf360c", "#ffeb3b", "#fff9c4", "#fff176", "#ffeb3b",
+        //   "#fbc02d", "#f57f17", "#ffff00", "#8bc34a", "#dcedc8",
+        //   "#9ccc65", "#7cb342", "#558b2f", "#ccff90", "#69f0ae"
+        //   ]);
+        // .range([
+        //   "#e57373", "#f06292", "#ba68c8", "#9575cd", "#7986cb",
+        //   "#64b5f6", "#4fc3f7", "#4dd0e1", "#4db6ac", "#81c784",
+        //   "#aed581", "#dce775", "#fff176", "#ffd54f", "#ffb74d",
+        //   "#ff8a65", "#a1887f", "#e0e0e0", "#90a4ae", "wheat"
+        //   ]);
+        //.range(["red", "yellow" ,"blue", "purple", "salmon"]);
+        //.range([d3.rgb("#007AFF"), d3.rgb('#FFF500')]);
+
+    var svg = d3.select('.heatmap')
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+
+    var cells = svg.selectAll('rect')
+        .data(data)
+        .enter().append('g').append('rect')
+        .attr('class', 'cell')
+        .attr('width', cellSize)
+        .attr('height', cellSize/2)
+        .attr('y', function(d) { return yScale(d.country); })
+        .attr('x', function(d) { return xScale(d.discipline); })
+        .attr('fill', function(d) { return colorScale(d.value); })
+//         .on("mouseover", mouseover)
+//             .on("mousemove", mousemove)
+//             .on("mouseout", mouseout);
+
+//     var div = d3.select("body").append("div")
+//     .attr("class", "tooltip")
+//     .style("display", "none");
+
+//     function mouseover() {
+//       div.style("display", "inline");
+//     }
+
+//     function mousemove() {
+//       div.text("I feel..." + d3.event.pageX)
+//          .style("left", (d3.event.pageX - 34) + "px")
+//          .style("top", (d3.event.pageY - 12) + "px");
+//     }
+
+//     function mouseout() {
+//       div.style("display", "none");
+//     }
+
+
+
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .selectAll('text')
+        .attr('font-weight', 'normal');
+
+    svg.append("g")
+        .attr("class", "x axis")
+        .call(xAxis)
+        .selectAll('text')
+        .attr('font-weight', 'normal')
+        .style("text-anchor", "start")
+        .attr("dx", ".8em")
+        .attr("dy", ".5em")
+        .attr("transform", function (d) {
+            return "rotate(-60)";
+        });
+
+
+  });
+</script> 
