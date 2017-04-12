@@ -1,0 +1,22 @@
+#title {
+  width:1000px;
+  height:150px;
+  margin-top: 80px;
+font-family:courier;
+font-size:40px;
+color:white;
+}
+
+#randomT {
+  width:1000px;
+  height:250px;
+font-family:courier;
+font-size:20px;
+color:white;
+}
+
+#bb {
+  font-family:courier;
+  font-size:16px;
+  font-weight:bold;
+}
