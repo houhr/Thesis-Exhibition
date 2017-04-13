@@ -182,7 +182,7 @@
 
   var formatDate = d3.time.format("%Y-%m-%d");
 
-  d3.csv('data.csv', function ( response ) {
+  d3.csv('byCountry.csv', function ( response ) {
     var data = response.map(function( item ) {
         var newItem = {};
         newItem.country = item.x;
