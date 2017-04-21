@@ -42,20 +42,13 @@
       line-height: 1em;
     }
 
-    #VivianWang {
-      background: url(images/VivianWang.jpg) no-repeat center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
-
   </style>
 
 </head>
 <body>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/d3-format.v1.min.js"></script>
+  <script src="https://d3js.org/d3-selection.v1.min.js"></script>
   <script>
 
     var margin = {top: 20, right: 0, bottom: 0, left: 0},
@@ -80,8 +73,6 @@
         return d.children;
       });
 
-      console.log(nodes);
-
       nodes = treemap(nodes
         .sum(function(d) { return d.value; })
         .sort(function(a, b) { return b.height - a.height || b.value - a.value; })
@@ -91,7 +82,7 @@
 
       d3.select("body")
         .selectAll(".node")
-        .data(nodes.leaves())
+        .data(nodes.descendants().filter(function(d) { return d.depth == 1 ? this : null; }))
         .enter().append("div")
           .attr("class", "node")
           .attr("title", function(d) { return d.data.name + "\n" + format(d.data.value);})
