@@ -3,6 +3,7 @@
   "children": [
     {
       "name": "Interaction Design",
+      "image": "images/IxD.jpg",
       "children" : [
         {
           "name": "Student One",
@@ -17,6 +18,7 @@
     },
     {
       "name": "Graphic Design",
+      "image": "images/GD.jpg",
       "children" : [
         {
           "name": "Student Three",
@@ -30,6 +32,7 @@
     },
     {
       "name": "Industrial Design",
+      "image": "images/ID.jpg",
       "children" : [
         {
           "name": "Student Five",
