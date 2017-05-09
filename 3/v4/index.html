@@ -1,0 +1,2034 @@
+<!-- PROCESS PROCESS PROCESS PROCESS PROCESS Line 99-->
+<!-- EMOJI EMOJI EMOJI EMOJI EMOJI Line 1042-->
+
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HOW HOW HOW</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+          margin: 0;
+        }
+
+        #container {
+          position: fixed;
+          mix-blend-mode: darken;
+          display: block;
+        }
+
+        #containertwo {
+          position: fixed;
+          mix-blend-mode: darken;
+          display: block;
+        }
+
+        #btnSet {
+          position: fixed;
+          bottom: 10vh;
+          left: 10vw;
+        }
+
+        .w3-bar {
+          width: 100%;
+          overflow: hidden;
+          text-align: center;
+          position: fixed;
+          bottom: 10px;
+          font-family: Helvetica;
+          font-weight: bold;
+          font-size: 12px;
+        }
+
+        .w3-button {
+          color: #FF407F;
+          border: #FF407F 3px solid;
+        }
+
+        .w3-button:hover {
+          background-color: #FF407F !important;
+          color: white !important;
+        }
+
+
+    </style>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/heatmap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+        $("#process").click(function(){
+            $("#container").show();
+            $("#containertwo").hide();
+        });
+
+        $("#emoji").click(function(){
+            $("#container").hide();
+            $("#containertwo").show();
+        });
+
+        $("#blend").click(function(){
+            $("#container").show();
+            $("#containertwo").show();
+        });
+
+    });
+    </script>
+
+
+
+
+  </head>
+
+  <body>
+    <div id="container"></div> 
+    <div id="containertwo"></div> 
+
+      <div class="w3-bar">
+        <button id="process" class="w3-button">process</button>
+        <button id="emoji" class="w3-button">emoji</button>
+        <button id="blend" class="w3-button">blend me!</button>
+      </div>
+
+
+
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+     <defs> <pattern id="happy" patternUnits="userSpaceOnUse" width="24" height="24"> 
+<!--       distance between every pattern -->
+<g>
+  <path d="M22,2v20H2V2H22 M24,0H0v24h24V0z"/>
+  <g>
+    <polygon points="14,16 13,16 12,16 11,16 10,16 9,16 8,16 8,17 8,18 9,18 10,18 11,18 12,18 13,18 14,18 15,18 16,18 
+      16,17 16,16 15,16     "/>
+    <polygon points="16,12 16,14 16,16 18,16 18,14 18,12    "/>
+    <polygon points="8,12 6,12 6,14 6,16 8,16 8,14    "/>
+  </g>
+  <polygon points="8,6 6,6 6,8 8,8 8,6  "/>
+  <polygon points="18,6 16,6 16,8 18,8 18,6   "/>
+</g>
+</pattern> </defs> 
+</svg>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+     <defs> <pattern id="sad" patternUnits="userSpaceOnUse" width="24" height="24"> 
+      <g>
+        <path d="M22,2v20H2V2H22 M24,0H0v24h24V0z"/>
+        <g>
+          <polygon points="16,12 15,12 14,12 13,12 12,12 11,12 10,12 9,12 8,12 8,13 8,14 9,14 10,14 11,14 12,14 13,14 14,14 
+    15,14 16,14 16,13   "/>
+    <polygon points="6,16 6,18 8,18 8,16 8,14 6,14  "/>
+    <polygon points="16,14 16,16 16,18 18,18 18,16 18,14  "/>
+  </g>
+<polygon points="8,6 6,6 6,8 8,8 8,6 "/>
+<polygon points="18,6 16,6 16,8 18,8 18,6 "/>
+</g>
+</pattern> </defs> 
+</svg>
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+     <defs> <pattern id="confused" patternUnits="userSpaceOnUse" width="24" height="24"> 
+<g>
+    <path d="M0,24.9C0,16.6,0,8.3,0,0c8.3,0,16.6,0,24.9,0c0,8.3,0,16.6,0,24.9C16.6,24.9,8.3,24.9,0,24.9z M22.9,22.9c0-7,0-14,0-20.9
+        C15.9,2,8.9,2,2,2C2,9,2,16,2,22.9C9,22.9,15.9,22.9,22.9,22.9z"/>
+    <path d="M8.3,16.7c2.8,0,5.6,0,8.3,0c0,0.7,0,1.4,0,2.1c-2.8,0-5.6,0-8.3,0C8.3,18.1,8.3,17.4,8.3,16.7z"/>
+    <path d="M6.2,7.2c-0.7,0-1.4,0-2.1,0c0-0.7,0-1.4,0-2.1c0.7,0,1.4,0,2.1,0C6.2,5.8,6.2,6.5,6.2,7.2C6.2,7.2,6.2,7.2,6.2,7.2z"/>
+    <path d="M8.3,7.2c0-0.7,0-1.4,0-2.1c0.7,0,1.4,0,2.1,0c0,0.7,0,1.4,0,2.1C9.6,7.2,8.9,7.2,8.3,7.2C8.2,7.2,8.3,7.2,8.3,7.2z"/>
+    <path d="M16.6,7.2c-0.7,0-1.4,0-2.1,0c0-0.7,0-1.4,0-2.1c0.7,0,1.4,0,2.1,0C16.6,5.8,16.6,6.5,16.6,7.2C16.6,7.2,16.6,7.2,16.6,7.2
+        z"/>
+    <path d="M18.7,7.2c0-0.7,0-1.4,0-2.1c0.7,0,1.4,0,2.1,0c0,0.7,0,1.4,0,2.1C20.1,7.2,19.4,7.2,18.7,7.2C18.7,7.2,18.7,7.2,18.7,7.2z
+        "/>
+    <path d="M6.2,9.3c0-0.7,0-1.4,0-2.1c0,0,0,0,0,0c0.7,0,1.4,0,2.1,0c0,0,0,0,0,0c0,0.7,0,1.4,0,2.1l0,0C7.5,9.3,6.8,9.3,6.2,9.3
+        L6.2,9.3z"/>
+    <path d="M18.7,9.3c-0.7,0-1.4,0-2.1,0l0,0c0-0.7,0-1.4,0-2.1c0,0,0,0,0,0c0.7,0,1.4,0,2.1,0c0,0,0,0,0,0
+        C18.7,7.9,18.7,8.6,18.7,9.3L18.7,9.3z"/>
+    <path d="M6.1,9.3c0,0.7,0,1.4,0,2.1c-0.7,0-1.4,0-2.1,0c0-0.7,0-1.4,0-2.1C4.8,9.3,5.5,9.3,6.1,9.3C6.2,9.3,6.1,9.3,6.1,9.3z"/>
+    <path d="M8.2,9.3c0.7,0,1.4,0,2.1,0c0,0.7,0,1.4,0,2.1c-0.7,0-1.4,0-2.1,0C8.2,10.7,8.2,10,8.2,9.3C8.2,9.3,8.2,9.3,8.2,9.3z"/>
+    <path d="M16.6,9.3c0,0.7,0,1.4,0,2.1c-0.7,0-1.4,0-2.1,0c0-0.7,0-1.4,0-2.1C15.2,9.3,15.9,9.3,16.6,9.3C16.6,9.3,16.6,9.3,16.6,9.3
+        z"/>
+    <path d="M18.7,9.3c0.7,0,1.4,0,2.1,0c0,0.7,0,1.4,0,2.1c-0.7,0-1.4,0-2.1,0C18.7,10.7,18.7,10,18.7,9.3C18.7,9.3,18.7,9.3,18.7,9.3
+        z"/>
+</g>
+</pattern> </defs> 
+</svg>
+
+
+
+
+
+
+
+
+
+    
+    <script>
+      Highcharts.chart('container', {
+
+        chart: {
+          width: 1445,
+          height: 900,
+          type: 'heatmap',
+          marginTop: 10,
+          marginBottom: 80,
+          plotBorderWidth: 0,
+          style: {
+            fontFamily: 'Helvetica',
+            fontWeight: 'bold'
+          }
+        },
+
+        title: {
+          text: 'HOW - Past 8 months journey in thesis',
+          style: {
+            display: 'none'
+          }
+        },
+
+        credits: {
+          enabled: false
+        },
+
+        xAxis: {
+          // categories: [
+          // 'Sep 1-15', 'Sep 15-30', 'Oct 1-15', 'Oct 1-31', 'Nov 1-15', 
+          // 'Nov 15-30', 'Nov 15-30', 'Dec 1-15', 'Dec 16-31', 'Jan 1-15', 
+          // 'Jan 16-31', 'Feb 1-14', 'Feb 15-28', 'Mar 1-15', 'Mar 16-31', 
+          // 'Apr 1-15', 'Apr 16-30', 'May 1-present'],
+
+          categories: [
+          'SEP', '', 'OCT', '', 'NOV', 
+          '', 'DEC', '', 'JAN', '', 
+          'FEB', '', 'MAR', '', 'APR', 
+          '', 'MAY'],
+
+          labels: {
+            style: {
+              color: '#FF407F',
+              fontSize: '12px',
+              paddingLeft: '100px',
+            },
+              // align: 'center',
+              // x: 30,
+              // y: 30
+            // rotation: -40,
+          },
+
+        tickColor: 'white',
+        tickWidth: 2
+        
+        },         
+
+
+        yAxis: {
+          categories: [
+
+          'Aaron Levine', 
+          'Ashley Adams', 
+          'Bharath Haridas',
+          'Bo Peng', 
+          'Buge Jiang', 
+          
+          'Chunhe Zhou', 
+          
+          'Dafnee Zambrano', 
+          'Dashiell Corvin-Brittin', 
+          'Emil Alex', 
+          'Hanzi Shao', 
+          'Hee Min Jee',
+
+          'Hongru Hou', 
+          'Hui Yang', 
+          'Jitpanan Jaturuntawaniya', 
+          'John Wegner', 
+          'Katelyn Moore',
+
+          'Kelly Steben', 
+          'Krishna Sistla', 
+          'Kyu Hee Keogh', 
+          'Li Lin', 
+          'Lingjiang Lai',
+
+          'Linzi Wu', 
+          'Lucy Sweeney', 
+          'Nicholas Hansen', 
+          'Peixin Fu', 
+          'Rasha Alamoudi',
+
+          'Robert Sieg', 
+          'Ruiwen Xu', 
+          'Sanchit Gupta', 
+          'Shihan Zhang', 
+          'Shuo-Ling Huang',
+
+          'Siyao Zhu', 
+          'Sophie Feller', 
+
+          'Tracy Tsutsumoto', 
+          'Veena Ramachandran', 
+
+          'William Bottini', 
+          'Xuefei Bai', 
+          'Xueting Wang', 
+          'Yisha Dai', 
+          'Yunwen Tu', 
+          ],
+
+          reversed: true,
+          title: null,
+          labels: {
+            style: {
+              color: '#FF407F',
+              textTransform: 'uppercase',
+            }
+          }
+        },
+
+        // note: put number instead of stage name --> for fitting colors 
+        colorAxis: {
+    dataClasses: [{
+      from: 'research',
+      to: 'research',
+      //ocean blue
+      name:'research',
+      color: '#01ffff '
+    }, {
+      from: 'Exploration',
+      to: 'Exploration',
+      //dark blue
+      name:'Exploration',
+      color: '#0100fe '
+    }, {
+      from: 'Interview',
+      to: 'Interview',
+      //dark pink
+      name:'Interview',
+      color: '#fe00ff '
+    }, {
+      from: 'Ideation',
+      to: 'Ideation',
+      //red
+      name:'Ideation',
+      color: '#fe0000 '
+    }, {
+      from: 'Making',
+      to: 'Making',
+      //light cream
+      name:'Making',
+      color: '#f2eedc '
+    }, {
+      from: 'Prototyping',
+      to: 'Prototyping',
+      //yellow
+      name:'Prototyping',
+      color: '#ffff02 '
+    }, {
+      from: 'Iteration',
+      to: 'Iteration',
+      //brown
+      name:'Iteration',
+      color: '#d09143 '
+    }, {
+      from: 'User testing',
+      to: 'User testing',
+      //green
+      name:'User testing',
+      color: '#00ff02 '
+    }, {
+      from: 'Reflection',
+      to: 'Reflection',
+      //light pink
+      name: 'Reflection',
+      color: '#fbdbfc '
+    },
+      {from: 'I don’t know what I’m doing',
+      to: 'I don’t know what I’m doing',
+      //grey
+      name: 'I don’t know what I’m doing',
+      color: '#707070 '
+    },{
+      from: 'I’m doing nothing',
+      to: 'I’m doing nothing',
+      //light grey
+      name: 'I’m doing nothing',
+      color: '#e5e5e5 '
+   },
+    {
+      from: 'Struggling',
+      to: 'Struggling',
+      //black
+      name: 'Struggling',
+      color: '#000000 '
+   },
+    {
+      from: 'Enjoying life',
+      to: 'Enjoying life',
+      //light peach
+      name: 'Enjoying life',
+      color: '#ffc9be '
+   },
+   {
+     from: 'No Response',
+     to: 'No Response',
+     //light peach
+     name: 'No Response',
+     color: '#FFFFFF'
+  }]
+  },
+  legend: {
+    align: 'right',
+    layout: 'vertical',
+    margin: 0,
+    verticalAlign: 'top',
+    y: 25,
+    enabled: false,
+  },
+        tooltip: {
+          borderWidth: '0',
+          hideDelay: '500',
+          backgroundColor: 'black',
+          style: {
+            color: 'white'
+          },
+          shadow: false,
+
+
+
+          // formatter: function() {
+          //   return '<b>' + this.series.xAxis.categories[this.point.x] + 
+          //   '</b> test :) <br><b>' +
+          //   this.point.value + 
+          //   '</b> items on <br><b>' + 
+          //   this.series.yAxis.categories[this.point.y] + 
+          //   '</b>';
+          // }
+          formatter: function() {
+            return this.series.yAxis.categories[this.point.y] + '<br>' +
+            this.point.value ;
+          }
+        },
+
+        exporting: {
+          buttons: {
+            contextButton: {
+              enabled: false
+            }
+          }
+        },
+
+        series: [{
+          name: '% of time spent in each stage of the thesis',
+          borderWidth: 0,
+
+          // [x, y, z] -> For x student, on name y, doing z
+          // 13: no data
+          data: [
+[0, 0, 'Struggling'],
+      [0, 1, 'Research'],
+      [0, 2, 'Ideation'],
+      [0, 3, 'Exploration'],
+      [0, 4, 'I don’t know what I’m doing'],
+      [0, 5, 'Enjoying life'],
+      [0, 6, 'Exploration'],
+      [0, 7, 'Research'],
+      [0, 8, 'Research'],
+      [0, 9, 'Research'],
+      [0, 10, 'Research'],
+      [0, 11, 'I don’t know what I’m doing'],
+      [0, 12, 'Research'],
+      [0, 13, 'Ideation'],
+      [0, 14, 'Research'],
+      [0, 15, 'Research'],
+      [0, 16, 'Research'],
+      [0, 17, 'I’m doing nothing'],
+      [0, 18, 'Exploration'],
+      [0, 19, 'Research'],
+      [0, 20, 'Research'],
+      [0, 21, 'Research'],
+      [0, 22, 'No Response'],
+      [0, 23, 'Exploration'],
+      [0, 24, 'Research'],
+      [0, 25, 'Research'],
+      [0, 26, 'Research'],
+      [0, 27, 'Research'],
+      [0, 28, 'Research'],
+      [0, 29, 'Research'],
+      [0, 30, 'No Response'],
+      [0, 31, 'I don’t know what I’m doing'],
+      [0, 32, 'No Response'],
+      [0, 33, 'Exploration'],
+      [0, 34, 'Exploration'],
+      [0, 35, 'Exploration'],
+      [0, 36, 'I don’t know what I’m doing'],
+      [0, 37, 'Enjoying life'],
+      [0, 38, 'No Response'],
+      [0, 39, 'Exploration'],
+
+      [1, 0, 'I don’t know what I’m doing'],
+      [1, 1, 'Exploration'],
+      [1, 2, 'I don’t know what I’m doing'],
+      [1, 3, 'Exploration'],
+      [1, 4, 'I don’t know what I’m doing'],
+      [1, 5, 'I don’t know what I’m doing'],
+      [1, 6, 'Exploration'],
+      [1, 7, 'Exploration'],
+      [1, 8, 'Exploration'],
+      [1, 9, 'Making'],
+      [1, 10, 'User testing'],
+      [1, 11, 'I don’t know what I’m doing'],
+      [1, 12, 'Exploration'],
+      [1, 13, 'Exploration'],
+      [1, 14, 'Making'],
+      [1, 15, 'Research'],
+      [1, 16, 'Exploration'],
+      [1, 17, 'I don’t know what I’m doing'],
+      [1, 18, 'Research'],
+      [1, 19, 'Exploration'],
+      [1, 20, 'Exploration'],
+      [1, 21, 'Research'],
+      [1, 22, 'No Response'],
+      [1, 23, 'Exploration'],
+      [1, 24, 'Interview'],
+      [1, 25, 'Exploration'],
+      [1, 26, 'Research'],
+      [1, 27, 'Research'],
+      [1, 28, 'Exploration'],
+      [1, 29, 'Exploration'],
+      [1, 30, 'No Response'],
+      [1, 31, 'Exploration'],
+      [1, 32, 'No Response'],
+      [1, 33, 'Ideation'],
+      [1, 34, 'Interview'],
+      [1, 35, 'Exploration'],
+      [1, 36, 'Exploration'],
+      [1, 37, 'I don’t know what I’m doing'],
+      [1, 38, 'No Response'],
+      [1, 39, 'Research'],
+
+      [2, 0, 'Exploration'],
+      [2, 1, 'Ideation'],
+      [2, 2, 'Prototyping'],
+      [2, 3, 'Exploration'],
+      [2, 4, 'Research'],
+      [2, 5, 'Exploration'],
+      [2, 6, 'Research'],
+      [2, 7, 'I don’t know what I’m doing'],
+      [2, 8, 'Exploration'],
+      [2, 9, 'Research'],
+      [2, 10, 'Research'],
+      [2, 11, 'I don’t know what I’m doing'],
+      [2, 12, 'Making'],
+      [2, 13, 'I don’t know what I’m doing'],
+      [2, 14, 'Making'],
+      [2, 15, 'Research'],
+      [2, 16, 'Ideation'],
+      [2, 17, 'Research'],
+      [2, 18, 'Interview'],
+      [2, 19, 'Prototyping'],
+      [2, 20, 'Ideation'],
+      [2, 21, 'Exploration'],
+      [2, 22, 'No Response'],
+      [2, 23, 'Research'],
+      [2, 24, 'Ideation'],
+      [2, 25, 'Interview'],
+      [2, 26, 'Exploration'],
+      [2, 27, 'Exploration'],
+      [2, 28, 'Interview'],
+      [2, 29, 'Exploration'],
+      [2, 30, 'No Response'],
+      [2, 31, 'Research'],
+      [2, 32, 'No Response'],
+      [2, 33, 'Struggling'],
+      [2, 34, 'Exploration'],
+      [2, 35, 'Exploration'],
+      [2, 36, 'Interview'],
+      [2, 37, 'Research'],
+      [2, 38, 'No Response'],
+      [2, 39, 'Research'],
+
+      [3, 0, 'Reflection'],
+      [3, 1, 'Struggling'],
+      [3, 2, 'Research'],
+      [3, 3, 'Exploration'],
+      [3, 4, 'Research'],
+      [3, 5, 'Prototyping'],
+      [3, 6, 'Exploration'],
+      [3, 7, 'Prototyping'],
+      [3, 8, 'Exploration'],
+      [3, 9, 'Ideation'],
+      [3, 10, 'Interview'],
+      [3, 11, 'I don’t know what I’m doing'],
+      [3, 12, 'Making'],
+      [3, 13, 'Making'],
+      [3, 14, 'Making'],
+      [3, 15, 'Exploration'],
+      [3, 16, 'Making'],
+      [3, 17, 'Exploration'],
+      [3, 18, 'Prototyping'],
+      [3, 19, 'Exploration'],
+      [3, 20, 'Ideation'],
+      [3, 21, 'Interview'],
+      [3, 22, 'No Response'],
+      [3, 23, 'Prototyping'],
+      [3, 24, 'Prototyping'],
+      [3, 25, 'Exploration'],
+      [3, 26, 'Exploration'],
+      [3, 27, 'Making'],
+      [3, 28, 'Making'],
+      [3, 29, 'Exploration'],
+      [3, 30, 'No Response'],
+      [3, 31,  0],
+      [3, 32, 'No Response'],
+      [3, 33, 'Making'],
+      [3, 34, 'Making'],
+      [3, 35, 'Exploration'],
+      [3, 36, 'Ideation'],
+      [3, 37, 'Exploration'],
+      [3, 38, 'No Response'],
+      [3, 39, 'Exploration'],
+
+      [4, 0, 'I don’t know what I’m doing'],
+      [4, 1, 'I don’t know what I’m doing'],
+      [4, 2, 'Making'],
+      [4, 3, 'I don’t know what I’m doing'],
+      [4, 4, 'Exploration'],
+      [4, 5, 'Struggling'],
+      [4, 6, 'Research'],
+      [4, 7, 'Reflection'],
+      [4, 8, 'Making'],
+      [4, 9, 'Exploration'],
+      [4, 10, 'Research'],
+      [4, 11, 'Struggling'],
+      [4, 12, 'Struggling'],
+      [4, 13, 'Prototyping'],
+      [4, 14, 'Making'],
+      [4, 15, 'Exploration'],
+      [4, 16, 'Making'],
+      [4, 17, 'Prototyping'],
+      [4, 18, 'Making'],
+      [4, 19, 'Research'],
+      [4, 20, 'Prototyping'],
+      [4, 21, 'Iteration'],
+      [4, 22, 'No Response'],
+      [4, 23, 'Research'],
+      [4, 24, 'I don’t know what I’m doing'],
+      [4, 25, 'Making'],
+      [4, 26, 'Prototyping'],
+      [4, 27, 'User testing'],
+      [4, 28, 'Interview'],
+      [4, 29, 'Prototyping'],
+      [4, 30, 'No Response'],
+      [4, 31, 'Interview'],
+      [4, 32, 'No Response'],
+      [4, 33, 'Struggling'],
+      [4, 34, 'User testing'],
+      [4, 35, 'Exploration'],
+      [4, 36, 'Interview'],
+      [4, 37, 'Ideation'],
+      [4, 38, 'No Response'],
+      [4, 39, 'Making'],
+
+      [5, 0, 'Struggling'],
+      [5, 1, 'Making'],
+      [5, 2, 'Reflection'],
+      [5, 3, 'Exploration'],
+      [5, 4, 'Interview'],
+      [5, 5, 'Iteration'],
+      [5, 6, 'Research'],
+      [5, 7, 'Prototyping'],
+      [5, 8, 'Exploration'],
+      [5, 9, 'Struggling'],
+      [5, 10, 'Exploration'],
+      [5, 11, 'Research'],
+      [5, 12, 'User testing'],
+      [5, 13, 'Struggling'],
+      [5, 14, 'Making'],
+      [5, 15, 'Research'],
+      [5, 16, 'Making'],
+      [5, 17, 'Reflection'],
+      [5, 18, 'Iteration'],
+      [5, 19, 'Exploration'],
+      [5, 20, 'Prototyping'],
+      [5, 21, 'Interview'],
+      [5, 22, 'No Response'],
+      [5, 23, 'Making'],
+      [5, 24, 'I’m doing nothing'],
+      [5, 25, 'Ideation'],
+      [5, 26, 'Iteration'],
+      [5, 27, 'Research'],
+      [5, 28, 'Making'],
+      [5, 29, 'Prototyping'],
+      [5, 30, 'No Response'],
+      [5, 31, 'Interview'],
+      [5, 32, 'No Response'],
+      [5, 33, 'Exploration'],
+      [5, 34, 'Prototyping'],
+      [5, 35, 'Exploration'],
+      [5, 36, 'Prototyping'],
+      [5, 37, 'User testing'],
+      [5, 38, 'No Response'],
+      [5, 39, 'Ideation'],
+
+      [6, 0, 'Research'],
+      [6, 1, 'Making'],
+      [6, 2, 'Struggling'],
+      [6, 3, 'Exploration'],
+      [6, 4, 'Making'],
+      [6, 5, 'User testing'],
+      [6, 6, 'Research'],
+      [6, 7, 'I don’t know what I’m doing'],
+      [6, 8, 'Ideation'],
+      [6, 9, 'Reflection'],
+      [6, 10, 'Prototyping'],
+      [6, 11, 'Exploration'],
+      [6, 12, 'Making'],
+      [6, 13, 'Prototyping'],
+      [6, 14, 'Making'],
+      [6, 15, 'Making'],
+      [6, 16, 'Making'],
+      [6, 17, 'Prototyping'],
+      [6, 18, 'Making'],
+      [6, 19, 'Ideation'],
+      [6, 20, 'Prototyping'],
+      [6, 21, 'Making'],
+      [6, 22, 'No Response'],
+      [6, 23, 'Research'],
+      [6, 24, 'I don’t know what I’m doing'],
+      [6, 25, 'Prototyping'],
+      [6, 26, 'Iteration'],
+      [6, 27, 'Exploration'],
+      [6, 28, 'Interview'],
+      [6, 29, 'Making'],
+      [6, 30, 'No Response'],
+      [6, 31, 'Prototyping'],
+      [6, 32, 'No Response'],
+      [6, 33, 'Struggling'],
+      [6, 34, 'User testing'],
+      [6, 35, 'Exploration'],
+      [6, 36, 'User testing'],
+      [6, 37, 'I don’t know what I’m doing'],
+      [6, 38,13],
+      [6, 39, 'Making'],
+
+      [7, 0, 'Research'],
+      [7, 1, 'Making'],
+      [7, 2, 'Enjoying life'],
+      [7, 3, 'Exploration'],
+      [7, 4, 'Making'],
+      [7, 5, 'Iteration'],
+      [7, 6, 'Ideation'],
+      [7, 7, 'Interview'],
+      [7, 8, 'Making'],
+      [7, 9, 'Enjoying life'],
+      [7, 10, 'Enjoying life'],
+      [7, 11, 'Interview'],
+      [7, 12, 'Enjoying life'],
+      [7, 13, 'Enjoying life'],
+      [7, 14, 'Making'],
+      [7, 15, 'Interview'],
+      [7, 16, 'Enjoying life'],
+      [7, 17, 'Reflection'],
+      [7, 18, 'Enjoying life'],
+      [7, 19, 'Enjoying life'],
+      [7, 20, 'Prototyping'],
+      [7, 21, 'Prototyping'],
+      [7, 22, 'No Response'],
+      [7, 23, 'Making'],
+      [7, 24, 'Struggling'],
+      [7, 25, 'User testing'],
+      [7, 26, 'Reflection'],
+      [7, 27, 'Interview'],
+      [7, 28, 'I’m doing nothing'],
+      [7, 29, 'Enjoying life'],
+      [7, 30, 'No Response'],
+      [7, 31, 'User testing'],
+      [7, 32, 'No Response'],
+      [7, 33, 'User testing'],
+      [7, 34, 'Iteration'],
+      [7, 35, 'Research'],
+      [7, 36, 'Interview'],
+      [7, 37, 'Enjoying life'],
+      [7, 38, 'No Response'],
+      [7, 39, 'Enjoying life'],
+
+      [8, 0, 'Research'],
+      [8, 1, 'Reflection'],
+      [8, 2, 'I’m doing nothing'],
+      [8, 3, 'Exploration'],
+      [8, 4, 'Struggling'],
+      [8, 5, 'Research'],
+      [8, 6, 'Prototyping'],
+      [8, 7, 'Exploration'],
+      [8, 8, 'Prototyping'],
+      [8, 9, 'I’m doing nothing'],
+      [8, 10, 'Enjoying life'],
+      [8, 11, 'Ideation'],
+      [8, 12, 'Research'],
+      [8, 13, 'Enjoying life'],
+      [8, 14, 'Making'],
+      [8, 15, 'Interview'],
+      [8, 16, 'Exploration'],
+      [8, 17, 'I don’t know what I’m doing'],
+      [8, 18, 'I don’t know what I’m doing'],
+      [8, 19, 'Enjoying life'],
+      [8, 20, 'Prototyping'],
+      [8, 21, 'Enjoying life'],
+      [8, 22, 'No Response'],
+      [8, 23, 'Reflection'],
+      [8, 24, 'Enjoying life'],
+      [8, 25, 'Interview'],
+      [8, 26, 'Enjoying life'],
+      [8, 27, 'Struggling'],
+      [8, 28, 'Struggling'],
+      [8, 29, 'Enjoying life'],
+      [8, 30, 'No Response'],
+      [8, 31, 'Interview'],
+      [8, 32, 'No Response'],
+      [8, 33, 'Making'],
+      [8, 34, 'Reflection'],
+      [8, 35, 'Exploration'],
+      [8, 36, 'I’m doing nothing'],
+      [8, 37, 'Enjoying life'],
+      [8, 38, 'No Response'],
+      [8, 39, 'Exploration'],
+
+      [9, 0, 'Exploration'],
+      [9, 1, 'Reflection'],
+      [9, 2, 'Research'],
+      [9, 3, 'Exploration'],
+      [9, 4, 'Enjoying life'],
+      [9, 5, 'Interview'],
+      [9, 6, 'Reflection'],
+      [9, 7, 'Prototyping'],
+      [9, 8, 'Research'],
+      [9, 9, 'Ideation'],
+      [9, 10, 'Struggling'],
+      [9, 11, 'Prototyping'],
+      [9, 12, 'Making'],
+      [9, 13, 'Research'],
+      [9, 14, 'Making'],
+      [9, 15, 'Making'],
+      [9, 16, 'Ideation'],
+      [9, 17, 'Exploration'],
+      [9, 18, 'Reflection'],
+      [9, 19, 'Prototyping'],
+      [9, 20, 'Prototyping'],
+      [9, 21, 'Reflection'],
+      [9, 22, 'No Response'],
+      [9, 23, 'I don’t know what I’m doing'],
+      [9, 24, 'Interview'],
+      [9, 25, 'Research'],
+      [9, 26, 'I don’t know what I’m doing'],
+      [9, 27, 'I’m doing nothing'],
+      [9, 28, 'Making'],
+      [9, 29, 'Research'],
+      [9, 30, 'No Response'],
+      [9, 31, 'Iteration'],
+      [9, 32, 'No Response'],
+      [9, 33, 'Struggling'],
+      [9, 34, 'Exploration'],
+      [9, 35, 'Exploration'],
+      [9, 36, 'I don’t know what I’m doing'],
+      [9, 37, 'Struggling'],
+      [9, 38, 'No Response'],
+      [9, 39, 'I don’t know what I’m doing'],
+
+      [10, 0, 'Making'],
+      [10, 1, 'Making'],
+      [10, 2, 'Making'],
+      [10, 3, 'I’m doing nothing'],
+      [10, 4, 'Enjoying life'],
+      [10, 5, 'Prototyping'],
+      [10, 6, 'I don’t know what I’m doing'],
+      [10, 7, 'Making'],
+      [10, 8, 'Research'],
+      [10, 9, 'Prototyping'],
+      [10, 10, 'Struggling'],
+      [10, 11, 'Prototyping'],
+      [10, 12, 'Struggling'],
+      [10, 13, 'Making'],
+      [10, 14, 'Making'],
+      [10, 15, 'Making'],
+      [10, 16, 'Making'],
+      [10, 17, 'Interview'],
+      [10, 18, 'Research'],
+      [10, 19, 'Exploration'],
+      [10, 20, 'I don’t know what I’m doing'],
+      [10, 21, 'Research'],
+      [10, 22, 'No Response'],
+      [10, 23, 'I don’t know what I’m doing'],
+      [10, 24, 'Prototyping'],
+      [10, 25, 'Making'],
+      [10, 26, 'Iteration'],
+      [10, 27, 'Struggling'],
+      [10, 28, 'Prototyping'],
+      [10, 29, 'Exploration'],
+      [10, 30, 'No Response'],
+      [10, 31, 'Interview'],
+      [10, 32, 'No Response'],
+      [10, 33, 'Making'],
+      [10, 34, 'Prototyping'],
+      [10, 35, 'Exploration'],
+      [10, 36, 'Ideation'],
+      [10, 37, 'Ideation'],
+      [10, 38, 'No Response'],
+      [10, 39, 'Struggling'],
+
+      [11, 0, 'Making'],
+      [11, 1, 'Making'],
+      [11, 2, 'I don’t know what I’m doing'],
+      [11, 3, 'User testing'],
+      [11, 4, 'Enjoying life'],
+      [11, 5, 'Iteration'],
+      [11, 6, 'Ideation'],
+      [11, 7, 'Reflection'],
+      [11, 8, 'Research'],
+      [11, 9, 'Exploration'],
+      [11, 10, 'Making'],
+      [11, 11, 'User testing'],
+      [11, 12, 'Making'],
+      [11, 13, 'Prototyping'],
+      [11, 14, 'Making'],
+      [11, 15, 'Making'],
+      [11, 16, 'Reflection'],
+      [11, 17, 'Research'],
+      [11, 18, 'I don’t know what I’m doing'],
+      [11, 19, 'Ideation'],
+      [11, 20, 'I don’t know what I’m doing'],
+      [11, 21, 'Exploration'],
+      [11, 22, 'No Response'],
+      [11, 23, 'I don’t know what I’m doing'],
+      [11, 24, 'Prototyping'],
+      [11, 25, 'Prototyping'],
+      [11, 26, 'Prototyping'],
+      [11, 27, 'I don’t know what I’m doing'],
+      [11, 28, 'Interview'],
+      [11, 29, 'Exploration'],
+      [11, 30, 'No Response'],
+      [11, 31, 'User testing'],
+      [11, 32, 'No Response'],
+      [11, 33, 'Making'],
+      [11, 34, 'User testing'],
+      [11, 35, 'Exploration'],
+      [11, 36, 'Research'],
+      [11, 37, 'Prototyping'],
+      [11, 38, 'No Response'],
+      [11, 39, 'User testing'],
+
+      [12, 0, 'Prototyping'],
+      [12, 1, 'Making'],
+      [12, 2, 'Struggling'],
+      [12, 3, 'Prototyping'],
+      [12, 4, 'Enjoying life'],
+      [12, 5, 'Reflection'],
+      [12, 6, 'Struggling'],
+      [12, 7, 'Prototyping'],
+      [12, 8, 'Ideation'],
+      [12, 9, 'Making'],
+      [12, 10, 'Making'],
+      [12, 11, 'Iteration'],
+      [12, 12, 'Making'],
+      [12, 13, 'Reflection'],
+      [12, 14, 'Making'],
+      [12, 15, 'Making'],
+      [12, 16, 'Struggling'],
+      [12, 17, 'Iteration'],
+      [12, 18, 'Prototyping'],
+      [12, 19, 'Exploration'],
+      [12, 20, 'Iteration'],
+      [12, 21, 'Prototyping'],
+      [12, 22, 'No Response'],
+      [12, 23, 'I don’t know what I’m doing'],
+      [12, 24, 'Prototyping'],
+      [12, 25, 'Prototyping'],
+      [12, 26, 'Reflection'],
+      [12, 27, 'Research'],
+      [12, 28, 'Iteration'],
+      [12, 29, 'Prototyping'],
+      [12, 30, 'No Response'],
+      [12, 31, 'Struggling'],
+      [12, 32, 'No Response'],
+      [12, 33, 'Making'],
+      [12, 34, 'Struggling'],
+      [12, 35, 'Exploration'],
+      [12, 36, 'Iteration'],
+      [12, 37, 'I’m doing nothing'],
+      [12, 38, 'No Response'],
+      [12, 39, 'Prototyping'],
+
+      [13, 0, 'Ideation'],
+      [13, 1, 'I’m doing nothing'],
+      [13, 2, 'Research'],
+      [13, 3, 'Making'],
+      [13, 4, 'Enjoying life'],
+      [13, 5, 'Making'],
+      [13, 6, 'Struggling'],
+      [13, 7, 'I don’t know what I’m doing'],
+      [13, 8, 'Prototyping'],
+      [13, 9, 'Ideation'],
+      [13, 10, 'User testing'],
+      [13, 11, 'Iteration'],
+      [13, 12, 'User testing'],
+      [13, 13, 'I’m doing nothing'],
+      [13, 14, 'Making'],
+      [13, 15, 'Research'],
+      [13, 16, 'Struggling'],
+      [13, 17, 'Ideation'],
+      [13, 18, 'Exploration'],
+      [13, 19, 'Exploration'],
+      [13, 20, 'Iteration'],
+      [13, 21, 'User testing'],
+      [13, 22, 'No Response'],
+      [13, 23, 'Prototyping'],
+      [13, 24, 'Prototyping'],
+      [13, 25, 'Making'],
+      [13, 26, 'Iteration'],
+      [13, 27, 'Ideation'],
+      [13, 28, 'Prototyping'],
+      [13, 29, 'Ideation'],
+      [13, 30, 'No Response'],
+      [13, 31, 'Ideation'],
+      [13, 32, 'No Response'],
+      [13, 33, 'Struggling'],
+      [13, 34, 'Ideation'],
+      [13, 35, 'Exploration'],
+      [13, 36, 'User testing'],
+      [13, 37, 'Reflection'],
+      [13, 38, 'No Response'],
+      [13, 39, 'Iteration'],
+
+      [14, 0, 'Making'],
+      [14, 1, 'Making'],
+      [14, 2, 'Making'],
+      [14, 3, 'Prototyping'],
+      [14, 4, 'Enjoying life'],
+      [14, 5, 'Making'],
+      [14, 6, 'Making'],
+      [14, 7, 'Reflection'],
+      [14, 8, 'User testing'],
+      [14, 9, 'Making'],
+      [14, 10, 'User testing'],
+      [14, 11, 'Iteration'],
+      [14, 12, 'Making'],
+      [14, 13, 'I don’t know what I’m doing'],
+      [14, 14, 'Making'],
+      [14, 15, 'Research'],
+      [14, 16, 'Making'],
+      [14, 17, 'Prototyping'],
+      [14, 18, 'Exploration'],
+      [14, 19, 'Research'],
+      [14, 20, 'Prototyping'],
+      [14, 21, 'Iteration'],
+      [14, 22, 'No Response'],
+      [14, 23, 'Iteration'],
+      [14, 24, 'Struggling'],
+      [14, 25, 'No Response'],
+      [14, 26, 'Iteration'],
+      [14, 27, 'Prototyping'],
+      [14, 28, 'Reflection'],
+      [14, 29, 'Making'],
+      [14, 30, 'No Response'],
+      [14, 31, 'Prototyping'],
+      [14, 32, 'No Response'],
+      [14, 33, 'Making'],
+      [14, 34, 'Making'],
+      [14, 35, 'Exploration'],
+      [14, 36, 'Iteration'],
+      [14, 37, 'Making'],
+      [14, 38, 'No Response'],
+      [14, 39, 'Making'],
+
+      [15, 0, 'Prototyping'],
+      [15, 1, 'Struggling'],
+      [15, 2, 'Making'],
+      [15, 3, 'Iteration'],
+      [15, 4, 'Enjoying life'],
+      [15, 5, 'Making'],
+      [15, 6, 'Iteration'],
+      [15, 7, 'Making'],
+      [15, 8, 'Iteration'],
+      [15, 9, 'Making'],
+      [15, 10, 'Making'],
+      [15, 11, 'Reflection'],
+      [15, 12, 'Making'],
+      [15, 13, 'User testing'],
+      [15, 14, 'Making'],
+      [15, 15, 'Making'],
+      [15, 16, 'Reflection'],
+      [15, 17, 'Making'],
+      [15, 18, 'Making'],
+      [15, 19, 'Exploration'],
+      [15, 20, 'Enjoying life'],
+      [15, 21, 'Reflection'],
+      [15, 22, 'No Response'],
+      [15, 23, 'Research'],
+      [15, 24, 'Enjoying life'],
+      [15, 25, 'Making'],
+      [15, 26, 'Reflection'],
+      [15, 27, 'Reflection'],
+      [15, 28, 'I’m doing nothing'],
+      [15, 29, 'Making'],
+      [15, 30, 'No Response'],
+      [15, 31, 'User testing'],
+      [15, 32, 'No Response'],
+      [15, 33, 'Struggling'],
+      [15, 34, 'User testing'],
+      [15, 35, 'Exploration'],
+      [15, 36, 'Iteration'],
+      [15, 37, 'Reflection'],
+      [15, 38, 'No Response'],
+      [15, 39, 'User testing'],
+
+      [16, 0, 'Reflection'],
+      [16, 1, 'Enjoying life'],
+      [16, 2, 'Making'],
+      [16, 3, 'Iteration'],
+      [16, 4, 'Enjoying life'],
+      [16, 5, 'Enjoying life'],
+      [16, 6, 'Making'],
+      [16, 7, 'Enjoying life'],
+      [16, 8, 'User testing'],
+      [16, 9, 'Reflection'],
+      [16, 10, 'Making'],
+      [16, 11, 'Enjoying life'],
+      [16, 12, 'User testing'],
+      [16, 13, 'Interview'],
+      [16, 14, 'Making'],
+      [16, 15, 'Making'],
+      [16, 16, 'Reflection'],
+      [16, 17, 'I don’t know what I’m doing'],
+      [16, 18, 'Making'],
+      [16, 19, 'Ideation'],
+      [16, 20, 'Enjoying life'],
+      [16, 21, 'Enjoying life'],
+      [16, 22, 'No Response'],
+      [16, 23, 'Ideation'],
+      [16, 24, 'Enjoying life'],
+      [16, 25, 'User testing'],
+      [16, 26, 'I don’t know what I’m doing'],
+      [16, 27, 'Enjoying life'],
+      [16, 28, 'Enjoying life'],
+      [16, 29, 'Making'],
+      [16, 30, 'No Response'],
+      [16, 31, 'User testing'],
+      [16, 32, 'No Response'],
+      [16, 33, 'Making'],
+      [16, 34, 'Reflection'],
+      [16, 35, 'Research'],
+      [16, 36, 'Reflection'],
+      [16, 37, 'Making'],
+      [16, 38, 'No Response'],
+      [16, 39, 'Making'],
+
+    ],
+          dataLabels: {
+            enabled: false,
+            color: '#000000'
+          }
+        }]
+
+        });
+
+      </script>
+
+<!-- EMOJI EMOJI EMOJI EMOJI EMOJI -->
+
+    <script>
+      Highcharts.chart('containertwo', {
+
+        chart: {
+          width: 1445,
+          height: 900,
+          type: 'heatmap',
+          marginTop: 10,
+          marginBottom: 80,
+          plotBorderWidth: 0,
+          style: {
+            fontFamily: 'Helvetica',
+            fontWeight: 'bold'
+          }
+        },
+
+        title: {
+          text: 'HOW - Past 8 months journey in thesis',
+          style: {
+            display: 'none'
+          }
+        },
+
+        credits: {
+          enabled: false
+        },
+
+        xAxis: {
+          // categories: [
+          // 'Sep 1-15', 'Sep 15-30', 'Oct 1-15', 'Oct 1-31', 'Nov 1-15', 
+          // 'Nov 15-30', 'Nov 15-30', 'Dec 1-15', 'Dec 16-31', 'Jan 1-15', 
+          // 'Jan 16-31', 'Feb 1-14', 'Feb 15-28', 'Mar 1-15', 'Mar 16-31', 
+          // 'Apr 1-15', 'Apr 16-30', 'May 1-present'],
+
+          categories: [
+          'SEP', '', 'OCT', '', 'NOV', 
+          '', 'DEC', '', 'JAN', '', 
+          'FEB', '', 'MAR', '', 'APR', 
+          '', 'MAY'],
+
+          labels: {
+            style: {
+              color: '#FF407F',
+              fontSize: '12px',
+                paddingLeft: '100px'
+            },
+              // align: 'center',
+              // x: 30,
+              // y: 30
+            // rotation: -40,
+          },
+
+        tickColor: 'white',
+        tickWidth: 2
+        
+        },         
+
+
+        yAxis: {
+          categories: [
+
+          'Aaron Levine', 
+          'Ashley Adams', 
+          'Bharath Haridas',
+          'Bo Peng', 
+          'Buge Jiang', 
+          
+          'Chunhe Zhou', 
+          
+          'Dafnee Zambrano', 
+          'Dashiell Corvin-Brittin', 
+          'Emil Alex', 
+          'Hanzi Shao', 
+          'Hee Min Jee',
+
+          'Hongru Hou', 
+          'Hui Yang', 
+          'Jitpanan Jaturuntawaniya', 
+          'John Wegner', 
+          'Katelyn Moore',
+
+          'Kelly Steben', 
+          'Krishna Sistla', 
+          'Kyu Hee Keogh', 
+          'Li Lin', 
+          'Lingjiang Lai',
+
+          'Linzi Wu', 
+          'Lucy Sweeney', 
+          'Nicholas Hansen', 
+          'Peixin Fu', 
+          'Rasha Alamoudi',
+
+          'Robert Sieg', 
+          'Ruiwen Xu', 
+          'Sanchit Gupta', 
+          'Shihan Zhang', 
+          'Shuo-Ling Huang',
+
+          'Siyao Zhu', 
+          'Sophie Feller', 
+
+          'Tracy Tsutsumoto', 
+          'Veena Ramachandran', 
+
+          'William Bottini', 
+          'Xuefei Bai', 
+          'Xueting Wang', 
+          'Yisha Dai', 
+          'Yunwen Tu', 
+          ],
+
+          reversed: true,
+          title: null,
+          labels: {
+            style: {
+              color: '#FF407F',
+              textTransform: 'uppercase',
+            }
+          }
+        },
+
+        // note: put number instead of stage name --> for fitting colors 
+        colorAxis: {
+          dataClasses: [{
+            from: 'Happy',
+            to: 'Happy',
+            color: 'url(#happy)'
+          }, {
+            from: 'Sad',
+            to: 'Sad',
+            color: 'url(#sad)'
+          }, {
+            from: 'Confused',
+            to: 'Confused',
+            color: 'url(#confused)'
+          }, {
+            from: 'No Response',
+            to: 'No Response',
+            color: '#fff'
+          },]
+        },
+
+        legend: {
+          align: 'right',
+          layout: 'vertical',
+          margin: 0,
+          verticalAlign: 'top',
+          y: 25,
+          enabled: false,
+        },
+
+        tooltip: {
+          borderWidth: '0',
+          hideDelay: '500',
+          backgroundColor: 'black',
+          style: {
+            color: 'white'
+          },
+          shadow: false,
+
+
+
+          // formatter: function() {
+          //   return '<b>' + this.series.xAxis.categories[this.point.x] + 
+          //   '</b> test :) <br><b>' +
+          //   this.point.value + 
+          //   '</b> items on <br><b>' + 
+          //   this.series.yAxis.categories[this.point.y] + 
+          //   '</b>';
+          // }
+          formatter: function() {
+            return this.series.yAxis.categories[this.point.y] + '<br>' +
+            this.point.value ;
+          }
+        },
+
+        exporting: {
+          buttons: {
+            contextButton: {
+              enabled: false
+            }
+          }
+        },
+
+        series: [{
+          name: '% of time spent in each stage of the thesis',
+          borderWidth: 0,
+
+          // [x, y, z] -> For x student, on name y, doing z
+          data: [
+[0, 0 , 'Sad' ],
+[0, 1 , 'Confused' ],
+[0, 2 , 'Happy' ],
+[0, 3 , 'No Response' ],
+[0, 4 , 'Confused' ],
+[0, 5 , 'Happy' ],
+[0, 6 , 'No Response' ],
+[0, 7 , 'Happy' ],
+[0, 8 , 'No Response' ],
+[0, 9 , 'No Response' ],
+[0, 10  , 'No Response' ],
+[0, 11  , 'Confused' ],
+[0, 12  , 'No Response' ],
+[0, 13  , 'No Response' ],
+[0, 14  , 'Happy' ],
+[0, 15  , 'Confused' ],
+[0, 16  , 'Happy' ],
+[0, 17  , 'Confused' ],
+[0, 18  , 'Confused' ],
+[0, 19  , 'No Response' ],
+[0, 20  , 'No Response' ],
+[0, 21  , 'Confused' ],
+[0, 22  , 'No Response' ],
+[0, 23  , 'Happy' ],
+[0, 24  , 'Happy' ],
+[0, 25  , 'No Response' ],
+[0, 26  , 'Confused' ],
+[0, 27  , 'Confused' ],
+[0, 28  , 'Happy' ],
+[0, 29  , 'Confused' ],
+[0, 30  , 'No Response' ],
+[0, 31  , 'No Response' ],
+[0, 32  , 'Happy' ],
+[0, 33  , 'No Response' ],
+[0, 34  , 'Happy' ],
+[0, 35  , 'Confused' ],
+[0, 36  , 'Happy' ],
+[0, 37  , 'No Response' ],
+[0, 38  , 'No Response' ],
+[0, 39  , 'Happy' ],
+[1, 0 , 'Confused' ],
+[1, 1 , 'Confused' ],
+[1, 2 , 'Confused' ],
+[1, 3 , 'No Response' ],
+[1, 4 , 'Confused' ],
+[1, 5 , 'Confused' ],
+[1, 6 , 'No Response' ],
+[1, 7 , 'Happy' ],
+[1, 8 , 'No Response' ],
+[1, 9 , 'No Response' ],
+[1, 10  , 'No Response' ],
+[1, 11  , 'Confused' ],
+[1, 12  , 'No Response' ],
+[1, 13  , 'Happy' ],
+[1, 14  , 'Happy' ],
+[1, 15  , 'Confused' ],
+[1, 16  , 'Happy' ],
+[1, 17  , 'Confused' ],
+[1, 18  , 'Happy' ],
+[1, 19  , 'No Response' ],
+[1, 20  , 'No Response' ],
+[1, 21  , 'Confused' ],
+[1, 22  , 'No Response' ],
+[1, 23  , 'Confused' ],
+[1, 24  , 'Confused' ],
+[1, 25  , 'No Response' ],
+[1, 26  , 'Sad' ],
+[1, 27  , 'Confused' ],
+[1, 28  , 'No Response' ],
+[1, 29  , 'Confused' ],
+[1, 30  , 'No Response' ],
+[1, 31  , 'No Response' ],
+[1, 32  , 'No Response' ],
+[1, 33  , 'No Response' ],
+[1, 34  , 'Sad' ],
+[1, 35  , 'Sad' ],
+[1, 36  , 'Happy' ],
+[1, 37  , 'Confused' ],
+[1, 38  , 'No Response' ],
+[1, 39  , 'Happy' ],
+[2, 0 , 'Confused' ],
+[2, 1 , 'Confused' ],
+[2, 2 , 'No Response' ],
+[2, 3 , 'No Response' ],
+[2, 4 , 'Confused' ],
+[2, 5 , 'Confused' ],
+[2, 6 , 'No Response' ],
+[2, 7 , 'Sad' ],
+[2, 8 , 'Sad' ],
+[2, 9 , 'No Response' ],
+[2, 10  , 'Confused' ],
+[2, 11  , 'Sad' ],
+[2, 12  , 'No Response' ],
+[2, 13  , 'Happy' ],
+[2, 14  , 'Happy' ],
+[2, 15  , 'Happy' ],
+[2, 16  , 'Confused' ],
+[2, 17  , 'Sad' ],
+[2, 18  , 'Happy' ],
+[2, 19  , 'No Response' ],
+[2, 20  , 'No Response' ],
+[2, 21  , 'Confused' ],
+[2, 22  , 'No Response' ],
+[2, 23  , 'Sad' ],
+[2, 24  , 'Confused' ],
+[2, 25  , 'No Response' ],
+[2, 26  , 'No Response' ],
+[2, 27  , 'Confused' ],
+[2, 28  , 'Confused' ],
+[2, 29  , 'Confused' ],
+[2, 30  , 'No Response' ],
+[2, 31  , 'No Response' ],
+[2, 32  , 'No Response' ],
+[2, 33  , 'No Response' ],
+[2, 34  , 'Confused' ],
+[2, 35  , 'Confused' ],
+[2, 36  , 'Confused' ],
+[2, 37  , 'No Response' ],
+[2, 38  , 'No Response' ],
+[2, 39  , 'Happy' ],
+[3, 0 , 'Confused' ],
+[3, 1 , 'Sad' ],
+[3, 2 , 'No Response' ],
+[3, 3 , 'No Response' ],
+[3, 4 , 'Confused' ],
+[3, 5 , 'Confused' ],
+[3, 6 , 'No Response' ],
+[3, 7 , 'Happy' ],
+[3, 8 , 'Sad' ],
+[3, 9 , 'No Response' ],
+[3, 10  , 'Confused' ],
+[3, 11  , 'Sad' ],
+[3, 12  , 'No Response' ],
+[3, 13  , 'Happy' ],
+[3, 14  , 'Happy' ],
+[3, 15  , 'Happy' ],
+[3, 16  , 'Confused' ],
+[3, 17  , 'Sad' ],
+[3, 18  , 'Happy' ],
+[3, 19  , 'No Response' ],
+[3, 20  , 'No Response' ],
+[3, 21  , 'No Response' ],
+[3, 22  , 'No Response' ],
+[3, 23  , 'Confused' ],
+[3, 24  , 'Confused' ],
+[3, 25  , 'No Response' ],
+[3, 26  , 'No Response' ],
+[3, 27  , 'Confused' ],
+[3, 28  , 'Confused' ],
+[3, 29  , 'No Response' ],
+[3, 30  , 'No Response' ],
+[3, 31  , 'No Response' ],
+[3, 32  , 'No Response' ],
+[3, 33  , 'No Response' ],
+[3, 34  , 'Sad' ],
+[3, 35  , 'Sad' ],
+[3, 36  , 'Confused' ],
+[3, 37  , 'No Response' ],
+[3, 38  , 'No Response' ],
+[3, 39  , 'Happy' ],
+[4, 0 , 'Sad' ],
+[4, 1 , 'Confused' ],
+[4, 2 , 'Confused' ],
+[4, 3 , 'No Response' ],
+[4, 4 , 'Confused' ],
+[4, 5 , 'Confused' ],
+[4, 6 , 'No Response' ],
+[4, 7 , 'Happy' ],
+[4, 8 , 'Confused' ],
+[4, 9 , 'No Response' ],
+[4, 10  , 'Confused' ],
+[4, 11  , 'No Response' ],
+[4, 12  , 'No Response' ],
+[4, 13  , 'Confused' ],
+[4, 14  , 'Happy' ],
+[4, 15  , 'Happy' ],
+[4, 16  , 'No Response' ],
+[4, 17  , 'No Response' ],
+[4, 18  , 'Happy' ],
+[4, 19  , 'No Response' ],
+[4, 20  , 'No Response' ],
+[4, 21  , 'Happy' ],
+[4, 22  , 'No Response' ],
+[4, 23  , 'Sad' ],
+[4, 24  , 'Confused' ],
+[4, 25  , 'No Response' ],
+[4, 26  , 'No Response' ],
+[4, 27  , 'Confused' ],
+[4, 28  , 'Confused' ],
+[4, 29  , 'No Response' ],
+[4, 30  , 'No Response' ],
+[4, 31  , 'No Response' ],
+[4, 32  , 'No Response' ],
+[4, 33  , 'No Response' ],
+[4, 34  , 'Confused' ],
+[4, 35  , 'Confused' ],
+[4, 36  , 'Confused' ],
+[4, 37  , 'No Response' ],
+[4, 38  , 'No Response' ],
+[4, 39  , 'No Response' ],
+[5, 0 , 'Sad' ],
+[5, 1 , 'Sad' ],
+[5, 2 , 'No Response' ],
+[5, 3 , 'No Response' ],
+[5, 4 , 'Confused' ],
+[5, 5 , 'No Response' ],
+[5, 5 , 'Sad' ],
+[5, 7 , 'Happy' ],
+[5, 8 , 'Confused' ],
+[5, 9 , 'Confused' ],
+[5, 10  , 'Confused' ],
+[5, 11  , 'No Response' ],
+[5, 12  , 'No Response' ],
+[5, 13  , 'Sad' ],
+[5, 14  , 'Happy' ],
+[5, 15  , 'Happy' ],
+[5, 16  , 'Happy' ],
+[5, 17  , 'No Response' ],
+[5, 18  , 'No Response' ],
+[5, 19  , 'Sad' ],
+[5, 20  , 'No Response' ],
+[5, 21  , 'No Response' ],
+[5, 22  , 'No Response' ],
+[5, 23  , 'Confused' ],
+[5, 24  , 'Confused' ],
+[5, 25  , 'No Response' ],
+[5, 26  , 'No Response' ],
+[5, 27  , 'Sad' ],
+[5, 28  , 'Confused' ],
+[5, 29  , 'No Response' ],
+[5, 30  , 'No Response' ],
+[5, 31  , 'No Response' ],
+[5, 32  , 'No Response' ],
+[5, 33  , 'No Response' ],
+[5, 34  , 'Confused' ],
+[5, 35  , 'Sad' ],
+[5, 36  , 'Confused' ],
+[5, 37  , 'Confused' ],
+[5, 38  , 'No Response' ],
+[5, 39  , 'Sad' ],
+[6, 0 , 'Sad' ],
+[6, 1 , 'Happy' ],
+[6, 2 , 'Sad' ],
+[6, 3 , 'No Response' ],
+[6, 4 , 'Confused' ],
+[6, 5 , 'No Response' ],
+[6, 6 , 'Sad' ],
+[6, 7 , 'Sad' ],
+[6, 8 , 'Confused' ],
+[6, 9 , 'No Response' ],
+[6, 10  , 'No Response' ],
+[6, 11  , 'Happy' ],
+[6, 12  , 'No Response' ],
+[6, 13  , 'No Response' ],
+[6, 14  , 'Happy' ],
+[6, 15  , 'Happy' ],
+[6, 16  , 'No Response' ],
+[6, 17  , 'Happy' ],
+[6, 18  , 'Sad' ],
+[6, 19  , 'Sad' ],
+[6, 20  , 'No Response' ],
+[6, 21  , 'Happy' ],
+[6, 22  , 'No Response' ],
+[6, 23  , 'Sad' ],
+[6, 24  , 'Sad' ],
+[6, 25  , 'No Response' ],
+[6, 26  , 'No Response' ],
+[6, 27  , 'Sad' ],
+[6, 28  , 'Confused' ],
+[6, 29  , 'Happy' ],
+[6, 30  , 'No Response' ],
+[6, 31  , 'No Response' ],
+[6, 32  , 'No Response' ],
+[6, 33  , 'No Response' ],
+[6, 34  , 'Happy' ],
+[6, 35  , 'Confused' ],
+[6, 36  , 'Confused' ],
+[6, 37  , 'Happy' ],
+[6, 38  , 'No Response' ],
+[6, 39  , 'Happy' ],
+[7, 0 , 'No Response' ],
+[7, 1 , 'No Response' ],
+[7, 2 , 'No Response' ],
+[7, 3 , 'No Response' ],
+[7, 4 , 'Confused' ],
+[7, 5 , 'No Response' ],
+[7, 6 , 'Sad' ],
+[7, 7 , 'Happy' ],
+[7, 8 , 'Confused' ],
+[7, 9 , 'Happy' ],
+[7, 10  , 'Happy' ],
+[7, 11  , 'No Response' ],
+[7, 12  , 'No Response' ],
+[7, 13  , 'No Response' ],
+[7, 14  , 'Happy' ],
+[7, 15  , 'Happy' ],
+[7, 16  , 'Happy' ],
+[7, 17  , 'Confused' ],
+[7, 18  , 'Happy' ],
+[7, 19  , 'No Response' ],
+[7, 20  , 'No Response' ],
+[7, 21  , 'Sad' ],
+[7, 22  , 'No Response' ],
+[7, 23  , 'Confused' ],
+[7, 24  , 'Sad' ],
+[7, 25  , 'No Response' ],
+[7, 26  , 'Happy' ],
+[7, 27  , 'Sad' ],
+[7, 28  , 'Happy' ],
+[7, 29  , 'Happy' ],
+[7, 30  , 'No Response' ],
+[7, 31  , 'No Response' ],
+[7, 32  , 'Happy' ],
+[7, 33  , 'No Response' ],
+[7, 34  , 'Happy' ],
+[7, 35  , 'Sad' ],
+[7, 36  , 'Confused' ],
+[7, 37  , 'Happy' ],
+[7, 38  , 'No Response' ],
+[7, 39  , 'Happy' ],
+[8, 0 , 'No Response' ],
+[8, 1 , 'No Response' ],
+[8, 2 , 'No Response' ],
+[8, 3 , 'No Response' ],
+[8, 4 , 'Confused' ],
+[8, 5 , 'Confused' ],
+[8, 6 , 'Sad' ],
+[8, 7 , 'Happy' ],
+[8, 8 , 'No Response' ],
+[8, 9 , 'Happy' ],
+[8, 10  , 'No Response' ],
+[8, 11  , 'No Response' ],
+[8, 12  , 'No Response' ],
+[8, 13  , 'No Response' ],
+[8, 14  , 'Happy' ],
+[8, 15  , 'Happy' ],
+[8, 16  , 'Confused' ],
+[8, 17  , 'Confused' ],
+[8, 18  , 'Confused' ],
+[8, 19  , 'No Response' ],
+[8, 20  , 'No Response' ],
+[8, 21  , 'No Response' ],
+[8, 22  , 'No Response' ],
+[8, 23  , 'Sad' ],
+[8, 24  , 'Confused' ],
+[8, 25  , 'No Response' ],
+[8, 26  , 'No Response' ],
+[8, 27  , 'Sad' ],
+[8, 28  , 'No Response' ],
+[8, 29  , 'Happy' ],
+[8, 30  , 'No Response' ],
+[8, 31  , 'No Response' ],
+[8, 32  , 'Happy' ],
+[8, 33  , 'No Response' ],
+[8, 34  , 'No Response' ],
+[8, 35  , 'Confused' ],
+[8, 36  , 'Confused' ],
+[8, 37  , 'No Response' ],
+[8, 38  , 'No Response' ],
+[8, 39  , 'Happy' ],
+[9, 0 , 'No Response' ],
+[9, 1 , 'No Response' ],
+[9, 2 , 'No Response' ],
+[9, 3 , 'No Response' ],
+[9, 4 , 'No Response' ],
+[9, 5 , 'Happy' ],
+[9, 6 , 'No Response' ],
+[9, 7 , 'Happy' ],
+[9, 8 , 'No Response' ],
+[9, 9 , 'No Response' ],
+[9, 10  , 'No Response' ],
+[9, 11  , 'No Response' ],
+[9, 12  , 'No Response' ],
+[9, 13  , 'No Response' ],
+[9, 14  , 'Happy' ],
+[9, 15  , 'Happy' ],
+[9, 16  , 'Sad' ],
+[9, 17  , 'No Response' ],
+[9, 18  , 'Confused' ],
+[9, 19  , 'No Response' ],
+[9, 20  , 'No Response' ],
+[9, 21  , 'No Response' ],
+[9, 22  , 'No Response' ],
+[9, 23  , 'Confused' ],
+[9, 24  , 'Confused' ],
+[9, 25  , 'No Response' ],
+[9, 26  , 'No Response' ],
+[9, 27  , 'Sad' ],
+[9, 28  , 'No Response' ],
+[9, 29  , 'Happy' ],
+[9, 30  , 'No Response' ],
+[9, 31  , 'No Response' ],
+[9, 32  , 'No Response' ],
+[9, 33  , 'No Response' ],
+[9, 34  , 'Confused' ],
+[9, 35  , 'Sad' ],
+[9, 36  , 'Confused' ],
+[9, 37  , 'No Response' ],
+[9, 38  , 'No Response' ],
+[9, 39  , 'Confused' ],
+[10, 0  , 'Confused' ],
+[10, 1  , 'No Response' ],
+[10, 2  , 'Sad' ],
+[10, 3  , 'No Response' ],
+[10, 4  , 'No Response' ],
+[10, 5  , 'Happy' ],
+[10, 6  , 'Happy' ],
+[10, 7  , 'Happy' ],
+[10, 8  , 'Happy' ],
+[10, 9  , 'No Response' ],
+[10, 10 , 'No Response' ],
+[10, 11 , 'No Response' ],
+[10, 12 , 'No Response' ],
+[10, 13 , 'No Response' ],
+[10, 14 , 'Happy' ],
+[10, 15 , 'Happy' ],
+[10, 16 , 'No Response' ],
+[10, 17 , 'No Response' ],
+[10, 18 , 'Happy' ],
+[10, 19 , 'Sad' ],
+[10, 20 , 'Sad' ],
+[10, 21 , 'Confused' ],
+[10, 22 , 'No Response' ],
+[10, 23 , 'Sad' ],
+[10, 24 , 'Confused' ],
+[10, 25 , 'No Response' ],
+[10, 26 , 'No Response' ],
+[10, 27 , 'Sad' ],
+[10, 28 , 'No Response' ],
+[10, 29 , 'Confused' ],
+[10, 30 , 'No Response' ],
+[10, 31 , 'No Response' ],
+[10, 32 , 'No Response' ],
+[10, 33 , 'No Response' ],
+[10, 34 , 'Sad' ],
+[10, 35 , 'Confused' ],
+[10, 36 , 'Confused' ],
+[10, 37 , 'No Response' ],
+[10, 38 , 'No Response' ],
+[10, 39 , 'Sad' ],
+[11, 0  , 'Happy' ],
+[11, 1  , 'Happy' ],
+[11, 2  , 'Confused' ],
+[11, 3  , 'No Response' ],
+[11, 4  , 'Happy' ],
+[11, 5  , 'Confused' ],
+[11, 6  , 'Happy' ],
+[11, 7  , 'Happy' ],
+[11, 8  , 'Happy' ],
+[11, 9  , 'No Response' ],
+[11, 10 , 'Confused' ],
+[11, 11 , 'No Response' ],
+[11, 12 , 'No Response' ],
+[11, 13 , 'Sad' ],
+[11, 14 , 'Happy' ],
+[11, 15 , 'Happy' ],
+[11, 16 , 'Happy' ],
+[11, 17 , 'Confused' ],
+[11, 18 , 'No Response' ],
+[11, 19 , 'Confused' ],
+[11, 20 , 'No Response' ],
+[11, 21 , 'Confused' ],
+[11, 22 , 'No Response' ],
+[11, 23 , 'Confused' ],
+[11, 24 , 'Confused' ],
+[11, 25 , 'No Response' ],
+[11, 26 , 'No Response' ],
+[11, 27 , 'Sad' ],
+[11, 28 , 'No Response' ],
+[11, 29 , 'Confused' ],
+[11, 30 , 'No Response' ],
+[11, 31 , 'No Response' ],
+[11, 32 , 'Sad' ],
+[11, 33 , 'No Response' ],
+[11, 34 , 'Confused' ],
+[11, 35 , 'Sad' ],
+[11, 36 , 'Confused' ],
+[11, 37 , 'Happy' ],
+[11, 38 , 'No Response' ],
+[11, 39 , 'Happy' ],
+[12, 0  , 'No Response' ],
+[12, 1  , 'Happy' ],
+[12, 2  , 'No Response' ],
+[12, 3  , 'No Response' ],
+[12, 4  , 'Happy' ],
+[12, 5  , 'Confused' ],
+[12, 6  , 'Confused' ],
+[12, 7  , 'Happy' ],
+[12, 8  , 'Happy' ],
+[12, 9  , 'Confused' ],
+[12, 10 , 'No Response' ],
+[12, 11 , 'No Response' ],
+[12, 12 , 'No Response' ],
+[12, 13 , 'Sad' ],
+[12, 14 , 'Happy' ],
+[12, 15 , 'Happy' ],
+[12, 16 , 'Confused' ],
+[12, 17 , 'Sad' ],
+[12, 18 , 'Confused' ],
+[12, 19 , 'Confused' ],
+[12, 20 , 'No Response' ],
+[12, 21 , 'Happy' ],
+[12, 22 , 'No Response' ],
+[12, 23 , 'Sad' ],
+[12, 24 , 'Confused' ],
+[12, 25 , 'No Response' ],
+[12, 26 , 'No Response' ],
+[12, 27 , 'Confused' ],
+[12, 28 , 'Sad' ],
+[12, 29 , 'No Response' ],
+[12, 30 , 'No Response' ],
+[12, 31 , 'No Response' ],
+[12, 32 , 'Sad' ],
+[12, 33 , 'No Response' ],
+[12, 34 , 'Sad' ],
+[12, 35 , 'Confused' ],
+[12, 36 , 'Sad' ],
+[12, 37 , 'Happy' ],
+[12, 38 , 'No Response' ],
+[12, 39 , 'Confused' ],
+[13, 0  , 'No Response' ],
+[13, 1  , 'No Response' ],
+[13, 2  , 'No Response' ],
+[13, 3  , 'No Response' ],
+[13, 4  , 'Happy' ],
+[13, 5  , 'Confused' ],
+[13, 6  , 'Confused' ],
+[13, 7  , 'Sad' ],
+[13, 8  , 'Happy' ],
+[13, 9  , 'No Response' ],
+[13, 10 , 'No Response' ],
+[13, 11 , 'No Response' ],
+[13, 12 , 'No Response' ],
+[13, 13 , 'Happy' ],
+[13, 14 , 'Happy' ],
+[13, 15 , 'Happy' ],
+[13, 16 , 'Sad' ],
+[13, 17 , 'Confused' ],
+[13, 18 , 'Confused' ],
+[13, 19 , 'Confused' ],
+[13, 20 , 'No Response' ],
+[13, 21 , 'Happy' ],
+[13, 22 , 'No Response' ],
+[13, 23 , 'Confused' ],
+[13, 24 , 'Sad' ],
+[13, 25 , 'No Response' ],
+[13, 26 , 'No Response' ],
+[13, 27 , 'Confused' ],
+[13, 28 , 'Confused' ],
+[13, 29 , 'Sad' ],
+[13, 30 , 'No Response' ],
+[13, 31 , 'No Response' ],
+[13, 32 , 'No Response' ],
+[13, 33 , 'No Response' ],
+[13, 34 , 'Sad' ],
+[13, 35 , 'Sad' ],
+[13, 36 , 'Confused' ],
+[13, 37 , 'No Response' ],
+[13, 38 , 'No Response' ],
+[13, 39 , 'Sad' ],
+[14, 0  , 'No Response' ],
+[14, 1  , 'Sad' ],
+[14, 2  , 'No Response' ],
+[14, 3  , 'No Response' ],
+[14, 4  , 'Happy' ],
+[14, 5  , 'Sad' ],
+[14, 6  , 'Confused' ],
+[14, 7  , 'Happy' ],
+[14, 8  , 'Happy' ],
+[14, 9  , 'Sad' ],
+[14, 10 , 'Confused' ],
+[14, 11 , 'No Response' ],
+[14, 12 , 'No Response' ],
+[14, 13 , 'No Response' ],
+[14, 14 , 'Happy' ],
+[14, 15 , 'Happy' ],
+[14, 16 , 'No Response' ],
+[14, 17 , 'Happy' ],
+[14, 18 , 'Confused' ],
+[14, 19 , 'Sad' ],
+[14, 20 , 'No Response' ],
+[14, 21 , 'Happy' ],
+[14, 22 , 'No Response' ],
+[14, 23 , 'Sad' ],
+[14, 24 , 'Sad' ],
+[14, 25 , 'No Response' ],
+[14, 26 , 'No Response' ],
+[14, 27 , 'Confused' ],
+[14, 28 , 'No Response' ],
+[14, 29 , 'Happy' ],
+[14, 30 , 'No Response' ],
+[14, 31 , 'No Response' ],
+[14, 32 , 'No Response' ],
+[14, 33 , 'No Response' ],
+[14, 34 , 'Confused' ],
+[14, 35 , 'Confused' ],
+[14, 36 , 'Confused' ],
+[14, 37 , 'No Response' ],
+[14, 38 , 'No Response' ],
+[14, 39 , 'No Response' ],
+[15, 0  , 'Happy' ],
+[15, 1  , 'Confused' ],
+[15, 2  , 'No Response' ],
+[15, 3  , 'No Response' ],
+[15, 4  , 'Happy' ],
+[15, 5  , 'Sad' ],
+[15, 6  , 'Happy' ],
+[15, 7  , 'Happy' ],
+[15, 8  , 'Happy' ],
+[15, 9  , 'No Response' ],
+[15, 10 , 'No Response' ],
+[15, 11 , 'No Response' ],
+[15, 12 , 'No Response' ],
+[15, 13 , 'Happy' ],
+[15, 14 , 'Happy' ],
+[15, 15 , 'Happy' ],
+[15, 16 , 'Sad' ],
+[15, 17 , 'No Response' ],
+[15, 18 , 'No Response' ],
+[15, 19 , 'Sad' ],
+[15, 20 , 'No Response' ],
+[15, 21 , 'Happy' ],
+[15, 22 , 'No Response' ],
+[15, 23 , 'Confused' ],
+[15, 24 , 'Happy' ],
+[15, 25 , 'No Response' ],
+[15, 26 , 'No Response' ],
+[15, 27 , 'Happy' ],
+[15, 28 , 'No Response' ],
+[15, 29 , 'Happy' ],
+[15, 30 , 'No Response' ],
+[15, 31 , 'No Response' ],
+[15, 32 , 'No Response' ],
+[15, 33 , 'No Response' ],
+[15, 34 , 'Confused' ],
+[15, 35 , 'Sad' ],
+[15, 36 , 'Happy' ],
+[15, 37 , 'No Response' ],
+[15, 38 , 'No Response' ],
+[15, 39 , 'Happy' ],
+[16, 0  , 'Sad' ],
+[16, 1  , 'Happy' ],
+[16, 2  , 'No Response' ],
+[16, 3  , 'No Response' ],
+[16, 4  , 'Happy' ],
+[16, 5  , 'Happy' ],
+[16, 6  , 'Happy' ],
+[16, 7  , 'Happy' ],
+[16, 8  , 'Happy' ],
+[16, 9  , 'Happy' ],
+[16, 10 , 'No Response' ],
+[16, 11 , 'Happy' ],
+[16, 12 , 'No Response' ],
+[16, 13 , 'No Response' ],
+[16, 14 , 'Happy' ],
+[16, 15 , 'Happy' ],
+[16, 16 , 'Happy' ],
+[16, 17 , 'Confused' ],
+[16, 18 , 'No Response' ],
+[16, 19 , 'No Response' ],
+[16, 20 , 'Happy' ],
+[16, 21 , 'Happy' ],
+[16, 22 , 'No Response' ],
+[16, 23 , 'Sad' ],
+[16, 24 , 'Happy' ],
+[16, 25 , 'No Response' ],
+[16, 26 , 'Happy' ],
+[16, 27 , 'No Response' ],
+[16, 28 , 'Happy' ],
+[16, 29 , 'Happy' ],
+[16, 30 , 'No Response' ],
+[16, 31 , 'No Response' ],
+[16, 32 , 'No Response' ],
+[16, 33 , 'No Response' ],
+[16, 34 , 'No Response' ],
+[16, 35 , 'Confused' ],
+[16, 36 , 'Happy' ],
+[16, 37 , 'No Response' ],
+[16, 38 , 'No Response' ],
+[16, 39 , 'Happy' ],
+          ],
+          dataLabels: {
+            enabled: false,
+            color: '#000000'
+          }
+        }]
+
+        });
+
+      </script>
+
+
+
+
+
+
+
+  </body>
+
+
+
+
+</html>
